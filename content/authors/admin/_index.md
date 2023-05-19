@@ -3,10 +3,10 @@ bio: My research interests include social media, mental health, and complex syst
 education:
   courses:
   - course: MSc in Data Analytics and Computational Social Science
-    institution: UMass Amherst
+    institution: University of Massachusetts Amherst
     year: 2024 (expected)
   - course: BA in Psychology
-    institution: ITESO
+    institution: Western Institute of Technology and Higher Education (ITESO)
     year: 2018
 email: ""
 first_name: Miguel
@@ -37,12 +37,12 @@ social:
 #   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/macuriels
   label: Check out some of my code
+  link: https://github.com/macuriels
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/in/macuriels
   label: Let's connect on LinkedIn
+  link: https://www.linkedin.com/in/macuriels
 # - icon: cv
 #   icon_pack: ai
 #   link: uploads/resume.pdf
