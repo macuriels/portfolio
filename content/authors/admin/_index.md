@@ -28,6 +28,14 @@ social:
 #   link: /#contact
 - display:
     header: true
+- icon: linkedin
+  icon_pack: fab
+  label: Let's connect on LinkedIn
+  link: https://www.linkedin.com/in/macuriels
+- icon: github
+  icon_pack: fab
+  label: Check out some of my code
+  link: https://github.com/macuriels
 #   icon: twitter
 #   icon_pack: fab
 #   label: Follow me on Twitter
@@ -35,14 +43,6 @@ social:
 # - icon: graduation-cap
 #   icon_pack: fas
 #   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  label: Check out some of my code
-  link: https://github.com/macuriels
-- icon: linkedin
-  icon_pack: fab
-  label: Let's connect on LinkedIn
-  link: https://www.linkedin.com/in/macuriels
 # - icon: cv
 #   icon_pack: ai
 #   link: uploads/resume.pdf
