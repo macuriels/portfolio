@@ -19,7 +19,7 @@ To do so, I will rely on the MxMT (Music x Mental Health Traits) dataset, which 
 
 The dataset was created to explore the relationship between music and mental health, and I will develop my model to advance our understanding of music and its role in mental health.
 
-## 2. Exploratory Data Analysis
+## Exploratory Data Analysis
 
 The dataset contains 33 variables which can be roughly divided into 3 blocks:
 
