@@ -1,5 +1,5 @@
 ---
-bio: My research interests include social media, mental health, and complex systems.
+bio: Bridging the gap between social science and data science. Passionate about people, insights, and stories.
 education:
   courses:
   - course: MSc in Data Analytics and Computational Social Science
