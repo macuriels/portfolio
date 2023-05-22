@@ -16,15 +16,18 @@ main:
   - name: Posts
     url: '/post/'
     weight: 40
-  - name: Talks
-    url: '#talks'
+  - name: Personal
+    url: '/personal/'
     weight: 50
-  - name: Publications
-    url: '#featured'
-    weight: 60
-  - name: Contact
-    url: '#contact'
-    weight: 70
+  # - name: Talks
+  #   url: '#talks'
+  #   weight: 50
+  # - name: Publications
+  #   url: '#featured'
+  #   weight: 60
+  # - name: Contact
+  #   url: '#contact'
+  #   weight: 70
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
