@@ -28,11 +28,11 @@ social:
 #   link: /#contact
 - display:
     header: true
-  icon: linkedin
+- icon: linkedin
   icon_pack: fab
   label: Let's connect on LinkedIn
   link: https://www.linkedin.com/in/macuriels
-  icon: github
+- icon: github
   icon_pack: fab
   label: Check out some of my code
   link: https://github.com/macuriels
