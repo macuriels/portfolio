@@ -52,5 +52,5 @@ superuser: true
 title: Miguel Curiel
 ---
 
-Imagine combining the understanding of human behavior with sophisticated analytical techniques - that's what I bring to the table. I am an undergrad in Psychology turned Data Scientist, and I'm all about connecting with people and businesses, learning their stories, and helping them make sense of the world through data.
+I am an undergrad in Psychology turned Data Scientist, and I'm all about connecting with people and businesses, learning their stories, and helping them make sense of the world through data.
 {style="text-align: justify;"}
