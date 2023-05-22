@@ -52,7 +52,7 @@ superuser: true
 title: Miguel Curiel
 ---
 
-Welcome! I am an undergrad in Psychology turned Data Scientist, and I'm all about connecting with people and businesses, learning their stories, and helping them make sense of the world through data.
+Hello there! I am an undergrad in Psychology turned Data Scientist, and I'm all about connecting with people and businesses, learning their stories, and helping them make sense of the world through data.
 
 On this website you will find some of my data science projects, my thoughts on art and society, and snippets of my personal life. Feel free to [reach out](https://www.linkedin.com/in/macuriels/) anytime!
 
