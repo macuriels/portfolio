@@ -56,5 +56,4 @@ Hello there! I am an undergrad in Psychology turned Data Scientist, and I'm all 
 
 On this website you will find some of my data science projects, my thoughts on art and society, and snippets of my personal life. Feel free to [reach out](https://www.linkedin.com/in/macuriels/) anytime!
 
-
 {style="text-align: justify;"}
