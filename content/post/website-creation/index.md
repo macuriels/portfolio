@@ -23,9 +23,7 @@ projects: []
 # tags:
 # - Academic
 # - 开源
-title: Personal
+title: How I Created This Website
 ---
 
-## A glimpse into my interests
 
-WIP.

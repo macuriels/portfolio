@@ -26,6 +26,4 @@ projects: []
 title: About Me
 ---
 
-## Who Am I?
 
-WIP.
