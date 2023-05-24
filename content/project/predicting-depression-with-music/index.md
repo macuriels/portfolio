@@ -12,7 +12,7 @@ tags:
 - Mental Health
 - Python
 - Jupyter Notebooks
-url_code: https://github.com/macuriels/umass_dacss_machinelearning/tree/main
+url_code: https://github.com/macuriels/umass_dacss_machinelearning/blob/main/predicting_depression_with_music_code.ipynb
 url_dataset: https://macuriels.netlify.app/files/mxmh_clean.csv
 # https://www.kaggle.com/datasets/catherinerasgaitis/mxmh-survey-results
 ---
