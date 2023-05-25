@@ -12,7 +12,7 @@ tags:
 - Mental Health
 - R
 url_code: https://github.com/macuriels/umass_dacss_datasciencefundamentals/blob/main/social_media_mental_health_code.R
-url_dataset: https://macuriels.netlify.app/files/socialmedia_mentalhealth_bycountry.csv
+url_dataset: https://macuriels.com/files/socialmedia_mentalhealth_bycountry.csv
 ---
 
 This is a repurposed analysis of a final project made for graduate-level Data Science class.
