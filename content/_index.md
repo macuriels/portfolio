@@ -11,6 +11,10 @@ sections:
     buttons:
     - name: All
       tag: '*'
+    - name: R
+      tag: R
+    - name: Python
+      tag: Python
     - name: Machine Learning
       tag: Machine Learning
     - name: Social Media

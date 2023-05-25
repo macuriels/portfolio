@@ -14,9 +14,9 @@ highlight_name: true
 interests:
 - Social Media
 - Mental Health
-- Network Analysis
+- Economic Ecosystems
 - Neuroscience
-- Education
+- Sociology
 last_name: Curiel
 # organizations:
 # - name: Stanford University
