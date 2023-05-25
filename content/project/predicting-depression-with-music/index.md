@@ -11,10 +11,8 @@ tags:
 - Machine Learning
 - Mental Health
 - Python
-- Jupyter Notebooks
 url_code: https://github.com/macuriels/umass_dacss_machinelearning/blob/main/predicting_depression_with_music_code.ipynb
 url_dataset: https://macuriels.netlify.app/files/mxmh_clean.csv
-# https://www.kaggle.com/datasets/catherinerasgaitis/mxmh-survey-results
 ---
 
 Having a background in psychology and having played guitar for over 15 years, music and mental health are two topics near and dear to me. It's well known that mental disorders affect millions worldwide, and their impact on individuals and society is significant. While the causes of mental disorders are complex and multifaceted, researchers have long recognized that environmental factors, such as social and cultural influences, can play a role in their development. Recently, there has been increasing interest in the potential link between music and mental health. Studies have shown that music can profoundly affect our emotional and psychological well-being, and it has been suggested that individuals with certain mental disorders may have distinct music preferences and behaviors related to music consumption.
