@@ -14,7 +14,7 @@ highlight_name: true
 interests:
 - Social Media
 - Mental Health
-- Economic Ecosystems
+- International Relations
 - Neuroscience
 - Sociology
 last_name: Curiel
