@@ -21,7 +21,7 @@ last_name: Curiel
 # organizations:
 # - name: Stanford University
 #   url: https://www.stanford.edu/
-role: Research Manager, Social Data Scientist
+role: Research Manager and Computational Data Scientist
 social:
 # - icon: envelope
 #   icon_pack: fas
@@ -52,8 +52,8 @@ superuser: true
 title: Miguel Curiel
 ---
 
-Welcome! I am an undergrad in Psychology turned Data Scientist, and I'm all about connecting with people and businesses, learning their stories, and helping them make sense of the world through data.
+Welcome! I am an undergrad in Psychology turned Data Scientist, and I'm all about helping people and businesses grow by learning their stories and making sense of the world through data.
 
-On this website, you will find some of my data science projects, my thoughts on art and society, and snippets of my personal life. Continue scrolling if you want to see some of my work, click [here](./about/) if you want to read more about my life story, or feel free to [reach out](https://www.linkedin.com/in/macuriels/) if you want to chat anytime.
+On this website, you will find some of my data science projects, my thoughts on art and society, and snippets of my personal life. 
 
 {style="text-align: justify;"}
