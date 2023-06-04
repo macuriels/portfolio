@@ -15,12 +15,10 @@ sections:
       tag: R
     - name: Python
       tag: Python
+    - name: Tableau
+      tag: Tableau
     - name: Machine Learning
       tag: Machine Learning
-    - name: Social Media
-      tag: Social Media
-    - name: Mental Health
-      tag: Mental Health
     default_button_index: 0
     filters:
       folders:

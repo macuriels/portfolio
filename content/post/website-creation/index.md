@@ -77,7 +77,7 @@ This breakdown is heavily influenced by Alison Hill's [magnificent tutorial](htt
 
 **PLEASE READ BEFORE MOVING ON**
 
-It is important to note that this website is possible thanks to Wowchemy - and no, this is not a sponsored message. They are a group of developers who strive to empower creators by offering free, open-source website templates, which are essentially building blocks that you can rearrange and edit at will. This website is built using their [Academic template](https://academic-demo.netlify.app/), but you can explore many more on [their website](https://wowchemy.com/templates/). 
+It is important to note that this website is possible thanks to Wowchemy. They are a group of developers who strive to empower creators by offering free, open-source website templates, which are essentially building blocks that you can rearrange and edit at will. This website is built using their [Academic template](https://academic-demo.netlify.app/), but you can explore many more on [their website](https://wowchemy.com/templates/). 
 
 {{% /callout %}}
 
