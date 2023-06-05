@@ -17,10 +17,10 @@ url_dataset: https://macuriels.com/files/socialmedia_mentalhealth_bycountry.csv
 This is a repurposed analysis of a final project made for graduate-level Data Science class.
 
 {{% callout note %}}
-TL;DR
+**TL;DR**
 - This project aims to explore the relationship between mental disorders and social media by looking at several country-level indicators, such as mental disorder prevalence, minutes spent on social media, and Gross Domestic Product.
-- To do so, this project downloads and cleans data provided by the Institute for Health Metrics and Evaluation, the World Bank, and the Global Web Index.
-- Once the data is ready, it is analyzed using R and Tableau. Even though the analysis reveals that more time on social media does not equate to greater mental health issues, there are several limitations, such as the quality of the data and the simplistic approach to this problem. A follow-up analysis could benefit from using more/better data and more sophisticated analytical techniques.
+- To do so, this project downloads, cleans and analyzes data provided by the Institute for Health Metrics and Evaluation, the World Bank, and the Global Web Index using R and Tableau.
+- Even though the analysis reveals that more time on social media does not equate to greater mental health issues, there are several limitations, such as the quality of the data and the simplistic approach to this problem. A follow-up analysis could benefit from using more/better data and more sophisticated analytical techniques.
 {{% /callout %}}
 
 ---
@@ -75,7 +75,7 @@ Besides the data on mental health and social media use, we will be adding socioe
 
 There are several data wrangling steps implemented in R once the raw data is downloaded - the steps followed and code used are denoted below.
 
-{{< spoiler text="Click to view the R code used for data wrangling" >}}
+{{< spoiler text="*Click to view the R code used for data wrangling*" >}}
 ```r
 # read in raw datasets
 social_media <- read_csv("GWI_socialmedia_2019.csv")
