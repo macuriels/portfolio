@@ -21,7 +21,7 @@ last_name: Curiel
 # organizations:
 # - name: Stanford University
 #   url: https://www.stanford.edu/
-role: Research Manager and Computational Data Scientist
+role: Data Analyst and Computational Social Scientist
 social:
 # - icon: envelope
 #   icon_pack: fas
