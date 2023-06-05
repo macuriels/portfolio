@@ -17,8 +17,12 @@ sections:
       tag: Python
     - name: Tableau
       tag: Tableau
+    - name: Shiny
+      tag: Shiny
     - name: Machine Learning
       tag: Machine Learning
+    - name: Social Network Analysis
+      tag: Social Network Analysis
     default_button_index: 0
     filters:
       folders:

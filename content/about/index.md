@@ -52,13 +52,13 @@ I describe what I do as having a "toolbox" of social science concepts, computer 
 
 ***MY BACKGROUND***
 
-📲 You can find me on most social media platforms as **macuriels**, a wordplay of my full (Mexican) name.
-
-🇲🇽 I am originally from a small city in Mexico (Colima) but grew up living between Mexico and the US.
+🇲🇽 I am originally from Colima, Mexico, but grew up living between Mexico and the US.
 
 🇺🇸 I currently live in Washington, DC, with my wife and two cats - Bella and Uva.
 
-💆 In my spare time, I like playing guitar and video games, listening to music, watching YouTube videos on diverse topics (philosophy, psychology, entertainment, and everything in between), hanging out with friends and family, traveling, and discovering bars and restaurants.
+💆 In my spare time, I like playing guitar and video games, listening to music, watching YouTube videos on diverse topics (psychology, philosophy, entertainment), hanging out with friends and family, traveling, and discovering bars and restaurants.
+
+📲 You can find me on most social media platforms as **macuriels**, a wordplay of my full (Mexican) name.
 
 🎥 Additional fun fact: I love audiovisual arts and have dabbled with being a YouTuber multiple times in my life - from comedy sketches and guitar covers to educational videos.
 
