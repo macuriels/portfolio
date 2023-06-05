@@ -1,5 +1,5 @@
 ---
-title: Predicting Depression Based on Musical Taste?
+title: Predicting Depression Based on Musical Taste
 date: 2023-05-28
 authors:
 - admin
