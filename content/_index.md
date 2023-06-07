@@ -1,9 +1,11 @@
 ---
+title: null
+type: landing
 date: "2023-05-22"
 sections:
 - block: about.biography
   content:
-    title: Biography
+    title: About
     username: admin
   id: about
 - block: portfolio
@@ -262,6 +264,4 @@ sections:
 #   design:
 #     columns: "2"
 #   id: contact
-title: null
-type: landing
 ---

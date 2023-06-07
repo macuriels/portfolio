@@ -6,7 +6,7 @@ education:
     institution: University of Massachusetts Amherst
     year: 2024 (expected)
   - course: BA in Psychology
-    institution: Western Institute of Technology and Higher Education (ITESO)
+    institution: ITESO University, Mexico
     year: 2018
 email: ""
 first_name: Miguel
@@ -21,7 +21,7 @@ last_name: Curiel
 # organizations:
 # - name: Stanford University
 #   url: https://www.stanford.edu/
-role: Data Analyst and Computational Social Scientist
+role: Research, Data, Insights
 social:
 # - icon: envelope
 #   icon_pack: fas
@@ -52,8 +52,8 @@ superuser: true
 title: Miguel Curiel
 ---
 
-Welcome! I am an undergrad in Psychology turned Data Scientist, and I'm all about helping people and businesses grow by creating synergy, learning their stories, and making sense of the world through data.
+I am a Social Scientist turned Data Scientist passionate about helping people and businesses grow through data-driven solutions.
 
-On this website, you will find some of my data science projects, my thoughts on art and society, and snippets of my personal life. 
+Continue scrolling to view some of my data science projects and feel free to reach out on [LinkedIn](https://www.linkedin.com/in/macuriels/) anytime.
 
 {style="text-align: justify;"}
