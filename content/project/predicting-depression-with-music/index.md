@@ -19,19 +19,24 @@ url_dataset: https://macuriels.com/files/mxmh_clean.csv
 This is a repurposed analysis of a final project made for graduate-level Data Science class.
 
 {{% callout note %}}
-**TL;DR**
+**PROJECT SUMMARY**
 
-- This project aims to develop machine learning models to predict depression based on a free survey dataset ([Music x Mental Health Traits](https://www.kaggle.com/datasets/catherinerasgaitis/mxmh-survey-results)), which contains responses from over 700 individuals worldwide about their music preferences and mental health traits.
-- Depression is assumed as a binary variable (yes/no), therefore five classification models are explored: K-Nearest Neighbors, Naive Bayes, Decision Tree, Support Vector Machine, and Linear Discriminant Analysis. The variables used as predictors include - but are not limited to - age, frequency listening to multiple genres, and whether individuals play an instrument.
-- All models performance ranged from moderate to relatively consisent, with K-Nearest Neighbors being the best choice in terms of performance, interpretability, and capturing the non-linear relationship between mental health and music preferences.
-- Even though all models perform somewhat decently, mental health is a complex topic and the assumptions underlying the models are simplistic, therefore this attempt would benefit from more/better data and enhanced models. Additionally, implementing such models would require evaluating the ethical implications.
+- This project develops machine learning models to attempt to predict depression based on a free survey dataset with over 700 responses ([Music x Mental Health Traits](https://www.kaggle.com/datasets/catherinerasgaitis/mxmh-survey-results)).
+
+- Five classification models are explored: K-Nearest Neighbors, Naive Bayes, Decision Tree, Support Vector Machine, and Linear Discriminant Analysis. 
+
+- All models achieve a moderate performance, with K-Nearest Neighbors being the best in terms of performance, interpretability, and flexibility.
+
+- Even though all models perform decently, mental health is a complex topic, the assumptions underlying the models are simplistic, and implementing them would require evaluating the ethical implications.
+
 {{% /callout %}}
-
 ---
 
-Having a background in psychology and having played guitar for over 15 years, music and mental health are two topics near and dear to me. It's well known that mental disorders affect millions worldwide, and their impact on individuals and society is significant. While the causes of mental disorders are complex and multifaceted, researchers have long recognized that environmental factors, such as social and cultural influences, can play a role in their development. Therefore, this post aims to explore **whether machine learning algorithms can predict depression based on music preferences and streaming behaviors**.
+Having a background in psychology and having played guitar for over 15 years, music and mental health are two topics near and dear to me. It's well known that mental disorders affect millions worldwide, and their impact on individuals and society is significant. 
 
-This post is roughly divided as follows:
+While the causes of mental disorders are complex and multifaceted, researchers have long recognized that environmental factors, such as social and cultural influences, can play a role in their development. Therefore, this post aims to explore **whether machine learning algorithms can predict depression based on music preferences and streaming behaviors**.
+
+This post is divided as follows:
 1. Explore the data
 2. Transform the data
 3. Build the models
@@ -41,7 +46,9 @@ This post is roughly divided as follows:
 
 ## Explore The Data
 
-We will use the **programming language, Python**, to explore and transform the **MxMT (Music x Mental Health Traits) dataset**, which is a survey dataset that contains responses from over 700 individuals about their music preferences and mental health traits. The survey was conducted online from August to November 2022, it was mostly distributed through online channels (such as Reddit), and did not limit participants by age or location.
+We will use the **programming language, Python**, to explore and transform the **MxMT (Music x Mental Health Traits) dataset**, which is a survey dataset that contains responses from over 700 individuals about their music preferences and mental health traits. 
+
+The survey was conducted online from August to November 2022, it was mostly distributed through online channels (such as Reddit), and did not limit participants by age or location.
 
 Below is a snippet of the raw dataset as well as some graphics exploring missingness in the data, the distribution of some of the main (numerical) columns, and the correlation among variables. The full dataset can also be accessed online for free here: 
 
@@ -387,7 +394,13 @@ sns.heatmap(df.corr()
     
 
 
-From the exploratory section, we can see that the dataset contains 33 variables which can be roughly divided in three blocks: Demographics/behaviors, music genres, and mental health. The dataset seems complete for the most part, with the exception of the BPM variable which has a higher degree of missingness. Most respondents are 18-30 years old, anxiety and depression are the most common disorders among them, and only a minority of variables seem to be highly correlated (e.g., mental disorders are highly correlated amongst themselves as well as some music genres).
+From the exploratory section, we can see conclude that
+- The dataset contains 33 variables.
+- The variables can be roughly divided in three blocks: Demographics/behaviors, music genres, and mental health. 
+- The dataset seems complete for the most part, with the exception of the BPM variable which has a higher degree of missingness. 
+- Most respondents are 18-30 years old.
+- Anxiety and depression are the most common disorders.
+- Only a minority of variables seem to be highly correlated.
 
 ---
 
@@ -400,7 +413,11 @@ Based on the findings from the exploratory section, below are the actions implem
 - Transform dependent variable (depression, originally 1-10) to binary (1-5 will be 0, 6-10 will be 1)
 - Encode categorical columns (including the target variable)
 
-Something important to highlight is the decision to **transform depression from a 1-10 scale to a binary (0-1) variable**. Even though mental disorders arguably have varying degrees to them, this decision is made to resemble how a diagnosis would be made: People who fit certain criteria are diagnosed with a disorder (in this case, thos who responded 6-10 are labeled as having a depression). This may not be the best for real life scenarios, but can increase the interpretability and can pave the way for follow-up analysis (more of this discussion can be found at the end of the post).
+Something important to highlight is the decision to **transform depression from a 1-10 scale to a binary (0-1) variable**. 
+
+Even though mental disorders arguably have varying degrees to them, this decision is made to resemble how a diagnosis would be made: People who fit certain criteria are diagnosed with a disorder (in this case, thos who responded 6-10 are labeled as having a depression). 
+
+Having depression as a binary variable not be the best for real life scenarios, but can increase the interpretability and can pave the way for follow-up analysis (more of this discussion can be found at the end of the post).
 
 It is also worthnoting that **not all variables are used as predictors**. The variables are narrowed down through feature selection - i.e., experimenting with adding and removing variables until an optimal performance is achieved.
 
@@ -472,16 +489,22 @@ plt.ylabel('Count')
 
 ## Build The Models
 
-Once the data has been transfomed and arranged as needed, we can talk about building our predictive models. First, we will begin by splitting the data into a training set and a testing set. Then, we will proceed with the actual fitting. Given that the outcome variable - the one we want to predict - is binary, the problem at hand is suiting for classification models. With that in mind, these are the models that will be tested:
+Once the data has been transfomed and arranged as needed, we can talk about building our predictive models. 
+
+First, we will begin by splitting the data into a training set and a testing set. 
+
+Then, we will proceed with the actual fitting. Given that the outcome variable - the one we want to predict - is binary, the problem at hand is suiting for classification models. 
+
+With that in mind, these are the models that will be tested:
 - K-Nearest Neighbors
 - Naive Bayes
 - Decision Tree
 - Support Vector Machines
 - Linear Discriminant Analysis
 
-Lastly, once all models are fitted, we will compare them and see which performs best in terms of predicting depression (if any!). Some common metrics to evaluate classification models include accuracy and the F1 score, but given that the classes of the outcome variable (depression) are somewhat unbalanced - meaning that there are significantly more people without depression - the Macro F1 score is a better metric to determine each model's performance.
+Lastly, once all models are fitted, we will compare them and see which performs best in terms of predicting depression (if any). 
 
-
+Some common metrics to evaluate classification models include accuracy and the F1 score, but given that the classes of the outcome variable (depression) are unbalanced - meaning that there are significantly more people without depression - the Macro F1 score is a better metric to determine each model's performance.
 
 ```python
 ## SPLIT THE DATA
@@ -605,17 +628,30 @@ for clf in classifiers:
     Accuracy: 0.64 (+/- 0.02) Macro F1 score: 0.49 (+/- 0.02) [LinearDiscriminantAnalysis]
 
 
-The models result in varying levels of performance, bias and variance, flexibility, and interpretability. Based on the accuracy and the standard deviation, the models range from moderate to relatively consistent. In term of flexibility and interpretability, K-Nearest Nieghbors and Decision Trees tend to be the most flexible and interpretable. Related to the previous point, since we are dealing with a nuanced problem such as predicting mental disorders, it is likely the models that assume linearity (Support Vectors, Naive Bayes, Linear Discriminant Analysis) introduce greater bias than those that are able to better capture non-linear relationships (KNN and Decision Trees).
+The models result in varying levels of performance, bias and variance, flexibility, and interpretability. 
+- Based on the accuracy and the standard deviation, the models range from moderate to relatively consistent. 
+- In terms of flexibility and interpretability, K-Nearest Nieghbors and Decision Trees tend to be the most flexible and interpretable. 
+- Related to flexibility and interpretability, since we predicting mental disorders is a nuanced topic, it is likely the models that assume linearity (Support Vectors, Naive Bayes, Linear Discriminant Analysis) introduce greater bias than those that are able to better capture non-linear relationships (KNN and Decision Trees).
 
-With all that said and done, **I would choose K-Nearest Neighbors as the best performing model**: It has the highest accuracy, it has one of the highest Macro F1 scores, it is highly interpretable, it is highly flexible, it has relatively low variance and likely introduces less bias due to its ability to capture non-linear relationships.
+With all that said and done, **K-Nearest Neighbors is the best performing model**.
+- It has the highest accuracy.
+- It has one of the highest Macro F1 scores.
+- It is highly interpretable.
+- It is highly flexible.
+- It has relatively low variance. 
+- It likely introduces less bias due to its ability to capture non-linear relationships.
 
 ---
 
 ## In Conclusion
 
-While the KNN model reaches somewhat decent levels of predictive power, it's still a 60-70% performance for predicting two categories - at which point, you might be better off flipping a coin and assigning depression based on that. 
+**Even though the machine learning models are relatively consistent when it comes to predicting depression, ultimately, the assumptions underlying the variables are reductionist and fail to capture the complex topics that are music and mental health**. 
 
-But even more than each model's performance, for me, the core question is: Can we really predict mental disorders? Mental health is already nuanced as is, so reducing it to a binary status - either you're depressed or not - based on arbitrary numbers is already a questionable choice. A better route would be to use a holistic dependent variable that encompasses self-reported measures along with professional assessments and even physiological metrics.
+While the KNN model reaches decent levels of predictive power, it's still a 60-70% performance for predicting two categories - at which point, you might be better off flipping a coin and assigning depression based on that. 
+
+But even more than each model's performance, for me, the core question is: Can we really predict mental disorders? 
+
+Mental health is already nuanced as is, so reducing it to a binary status - either you're depressed or not - based on arbitrary numbers is already a questionable choice. A better route would be to use a holistic dependent variable that encompasses self-reported measures along with professional assessments and even physiological metrics.
 
 Related to mental health being a multifaceted phenomena, these models rely on a limited amount of variables, therefore it is possible that depression is not being properly captured through the selected dependent variables (e.g., perhaps an ideal model needs to include Beats Per Minute or an individual's primary streaming service).
 
@@ -623,4 +659,6 @@ Additionally, even though the data seems more or less normally distributed, ther
 
 And lastly, imagine if we created a more accurate model, would we still want to predict mental disorders based on music taste? This could entail severe ethical implications - from endangering freedom of speech to wanting to access private data in the name of mental health.
 
-In conclusion, **even though the machine learning models are relatively consistent when it comes to predicting depression, ultimately, the assumptions underlying the variables are reductionist and fail to capture the complex topics that are music and mental health**. Music is intertwined with sociocultural practices and it is hard to encompass all of the aspects involved in a short survey. As for mental health, self reported measures are always debatible - add to that the fact that these models reduced depression to a binary scale, then you have a much more dubious outcome variable. Should a follow-up analysis be conducted, I would recommend fully fleshing out these concepts and having more control (while randomizing) over the sampling method.
+Music is intertwined with sociocultural practices and it is hard to encompass all of the aspects involved in a short survey. As for mental health, self-reported measures are always debatable - add to that the fact that these models reduced depression to a binary scale, then you have a much more dubious outcome variable.
+
+Should a follow-up analysis be conducted, I would recommend fully fleshing out these concepts, having more/better data, and having more control (while randomizing) over the sampling method.
