@@ -394,7 +394,7 @@ sns.heatmap(df.corr()
     
 
 
-From the exploratory section, we can see conclude that
+From the exploratory section, we can conclude that:
 - The dataset contains 33 variables.
 - The variables can be roughly divided in three blocks: Demographics/behaviors, music genres, and mental health. 
 - The dataset seems complete for the most part, with the exception of the BPM variable which has a higher degree of missingness. 

@@ -35,10 +35,12 @@ It is worth noting that this post is straightforward and simplistic, therefore i
 ---
 
 **WHAT YOU'LL NEED**
-- [x] R
-- [x] RStudio
-- [x] GitHub
-- [x] Netlify
+- [x] Latest version of R
+- [x] Latest version of RStudio
+- [x] `blogdown` package in RStudio
+- [x] GitHub account
+- [x] Netlify account
+- [x] Wowchemy website template (recommended: Hugo Academic)
 - [ ] Optional: Knowledge of other programming languages (Python, HTML)
 - [ ] Optional: Jupyter Notebooks
 - [ ] Optional: A web domain

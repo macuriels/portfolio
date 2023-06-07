@@ -22,9 +22,15 @@ image:
 Click [**here**](https://macuriels.shinyapps.io/finalproject_miguelcuriel/) to view an interactive dashboard with the social media and web insights for Netflix.
 
 {{% callout note %}}
-**TL;DR**
+
+**PROJECT SUMMARY**
+
 - This is a repurposed analysis of a final project made for graduate-level Data Science class which analyzes Netflix trends using the `gtrendsR` and `rtweet` packages in R to download data from Google Trends and Twitter, respectively. 
+
 - Google Trends data for Netflix (and other streaming services) is downloaded from October-December 2022; Twitter data is downloaded from December 4-7 for tweets containing #netflix.
+
 - Google Trends data revealed a cyclical peak in interest for Netflix searches, usually reaching its highest point on Sundays. Additionally, associated Google searches are related to popular releases during the time of the analysis. 
+
 - The Twitter analysis (hashtag network and map) reaffirms the idea that popular releases are central to the conversation around Netflix. Additionally, the brand has worldwide impact and is also seen associated with topics in mainstream media, such as FIFA or NFTs. 
+
 {{% /callout %}}
