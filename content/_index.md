@@ -3,6 +3,20 @@ title: null
 type: landing
 date: "2023-05-22"
 sections:
+- block: hero
+  content:
+    title: macuriels
+    text: |-
+      ---
+      Insights Through Data.
+      {style="font-size: 5.0rem;"}
+  design:
+    background:
+      image:
+        filename: network.svg
+        position: right
+        parallax: true
+        size: contain
 - block: about.biography
   content:
     title: About
