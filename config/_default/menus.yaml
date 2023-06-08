@@ -7,15 +7,18 @@ main:
   - name: Home
     url: ''
     weight: 10
-  # - name: About
-  #   url: '/about/'
-  #   weight: 20
+  - name: About
+    url: '#about'
+    weight: 20
   - name: Projects
     url: '/project/'
-    weight: 20
+    weight: 30
   - name: Posts
     url: '/post/'
-    weight: 30
+    weight: 40
+  - name: Let's Connect
+    url: 'https://www.linkedin.com/in/macuriels/'
+    weight: 50
   # - name: Personal
   #   url: '/personal/'
   #   weight: 50

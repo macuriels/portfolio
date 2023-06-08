@@ -52,8 +52,16 @@ superuser: true
 title: Miguel Curiel
 ---
 
-I am a Social Scientist turned Data Scientist passionate about helping people and businesses grow through data-driven solutions.
+> **I am a Social Scientist turned Data Scientist passionate about helping people and businesses grow through data-driven solutions.**
+{style="font-size: 1.5rem;"}
 
-Continue scrolling to view some of my data science projects and feel free to reach out on [LinkedIn](https://www.linkedin.com/in/macuriels/) anytime.
+I have spent the last 5 years specializing in translating complex data and sociotechnical systems into clear and concise insights to empower individuals and optimize business strategies.
+
+Continue scrolling to view some of my data science projects and feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/macuriels/).
+
+---
+
+## What is  ***macuriels***  for?
+I built this website to display my past projects and share the valuable lessons I've learned along my journey. The website's name is a playful nod to my full name.
 
 {style="text-align: justify;"}
