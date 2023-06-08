@@ -14,9 +14,9 @@ sections:
     background:
       image:
         filename: network.svg
-        position: right
+        position: center
         parallax: true
-        size: contain
+        # size: contain
 - block: about.biography
   content:
     title: About
