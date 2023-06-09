@@ -15,7 +15,7 @@ url_code: https://github.com/macuriels/umass_dacss_digitalbehavioraldata/blob/ma
 # external_link: https://macuriels.shinyapps.io/finalproject_miguelcuriel/
 
 image:
-  caption: Image generated using Canva's Text to Image feature
+  caption: Image generated using Canva's Text to Image AI generator
   focal_point: Smart
 ---
 

@@ -21,7 +21,7 @@ last_name: Curiel
 # organizations:
 # - name: Stanford University
 #   url: https://www.stanford.edu/
-role: Research, Data, Insights
+role: Data | Insights | Growth
 social:
 # - icon: envelope
 #   icon_pack: fas
@@ -52,10 +52,10 @@ superuser: true
 title: Miguel Curiel
 ---
 
-> **I am a Social Scientist turned Data Scientist passionate about helping people and businesses grow through data-driven solutions.**
+> **I am a Social Scientist that uses Data Science tools to help people and businesses grow through data-driven solutions.**
 {style="font-size: 1.5rem;"}
 
-I have spent the last 5 years specializing in translating complex data and sociotechnical systems into clear and concise insights to empower individuals and optimize business strategies.
+I have spent the last 5 years translating complex data into clear and concise insights to empower individuals, enhance marketing strategies, and optimize business procedures.
 
 Continue scrolling to view some of my data science projects and feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/macuriels/).
 

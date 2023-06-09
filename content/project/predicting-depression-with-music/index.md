@@ -4,7 +4,7 @@ date: 2023-05-28
 authors:
 - admin
 image:
-  caption: Image generated using Canva's Text to Image feature
+  caption: Image generated using Canva's Text to Image AI generator
   focal_point: Smart
 summary: Using Python to build machine learning models and predict depression based on music preferences.
 tags:

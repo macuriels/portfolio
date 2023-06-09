@@ -33,8 +33,8 @@ sections:
       tag: Python
     - name: Tableau
       tag: Tableau
-    - name: Shiny
-      tag: Shiny
+    - name: User Insights
+      tag: User Insights
     - name: Machine Learning
       tag: Machine Learning
     - name: Social Network Analysis

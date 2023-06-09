@@ -4,7 +4,7 @@ date: 2022-10-10
 authors:
 - admin
 image:
-  caption: Image generated using Canva's Text to Image feature
+  caption: Image generated using Canva's Text to Image AI generator
   focal_point: Smart
 summary: A country-level analysis of time spent on social media and mental disorder prevalence using R and Tableau.
 tags:
@@ -36,7 +36,7 @@ The present project aims to explore this social media-mental heatlh relationship
 
 This post is divided as follows:
 
-1. Explaiingn the data
+1. Explaining the data
 2. Cleaning the data
 3. Analyzing the data
 4. Coming to conclusions
