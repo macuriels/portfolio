@@ -119,7 +119,7 @@ Below is a snippet of the sociogram with digital tribes - the faces have been bl
 Digital tribes overview:
 - Tribe 1 are all about showing themselves as creative people, while also being conscious (and critical) of their surroundings.
 - Tribe 2 are characterized by posting mostly pictures of themselves (selfies) accompanied with messages of positivity, self-esteem and self-love.
-- Tribe 3 are, as the name suggests, people who work within healthcare (namely psychologists). 
+- Tribe 3 are people who work within healthcare (namely psychologists) and value professional growth and scientific facts.
 - Tribe 4 are people who show their profiles through sublime experiences, such as traveling or spending time with their loved ones.
 - Tribe 5 are individuals who value their personal appearance and will usually appear posting full-bodied pictures of themselves.
 
@@ -131,7 +131,7 @@ Using the previous digital tribes as an example, these are some common elements 
 - Tribe 2 value self-care, therefore some ways to connect with them is by posting motivational content, talking about caring for oneself, or even through humorous content.
 - Tribe 3 value information and professional growth, therefore showing achievements and sharing facts is a good way to connect.
 - Tribe 4 value experiences and one way to connect with them is through aesthetic images, thoughtful words, and moments of joy.
-- Trube 5 value looking and feeling good, so you can connect by posting enjoyable content (visually appealing, funny, aesthetic).
+- Tribe 5 value looking and feeling good, so you can connect by posting enjoyable content (visually appealing, funny, aesthetic).
 
 Below is just one example of a real image posted by a Tribe 2 on social media, where the highlight is that this is content that anyone can replicate - and in doing so, you are immediately connecting with this market segment.
 
