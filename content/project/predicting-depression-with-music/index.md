@@ -34,7 +34,7 @@ This is a repurposed analysis of a final project made for graduate-level Data Sc
 
 Having a background in psychology and having played guitar for over 15 years, music and mental health are two topics near and dear to me. It's well known that mental disorders affect millions worldwide, and their impact on individuals and society is significant. 
 
-While the causes of mental disorders are complex and multifaceted, researchers have long recognized that environmental factors, such as social and cultural influences, can play a role in their development. Therefore, this post aims to explore **whether machine learning algorithms can predict depression based on music preferences and streaming behaviors**.
+While the causes of mental disorders are complex and multifaceted, researchers have long recognized that environmental factors, such as social and cultural influences, can play a role in their development. Therefore, this project aims to explore **whether machine learning algorithms can predict depression based on music preferences and streaming behaviors**.
 
 This post is divided as follows:
 1. Explore the data
@@ -46,7 +46,7 @@ This post is divided as follows:
 
 ## Explore The Data
 
-We will use the **programming language, Python**, to explore and transform the **MxMT (Music x Mental Health Traits) dataset**, which is a survey dataset that contains responses from over 700 individuals about their music preferences and mental health traits. 
+This project relies on the **programming language, Python**, to explore and transform the **MxMT (Music x Mental Health Traits) dataset**, which is a survey dataset that contains responses from over 700 individuals about their music preferences and mental health traits. 
 
 The survey was conducted online from August to November 2022, it was mostly distributed through online channels (such as Reddit), and did not limit participants by age or location.
 
@@ -410,8 +410,8 @@ Based on the findings from the exploratory section, below are the actions implem
 - Create a dataframe that includes only the variables of interest
 - Remove null values
 - Deal with outliers in the daily hours spent listening to music
-- Transform dependent variable (depression, originally 1-10) to binary (1-5 will be 0, 6-10 will be 1)
-- Encode categorical columns (including the target variable)
+- Transform dependent variable (depression) from a discrete scale (1-10) to a binary one (1-5 will be 0, 6-10 will be 1)
+- Encode categorical columns (including the target variable) so that they can be properly processed by the machine learning algorithms
 
 Something important to highlight is the decision to **transform depression from a 1-10 scale to a binary (0-1) variable**. 
 
@@ -420,6 +420,15 @@ Even though mental disorders arguably have varying degrees to them, this decisio
 Having depression as a binary variable not be the best for real life scenarios, but can increase the interpretability and can pave the way for follow-up analysis (more of this discussion can be found at the end of the post).
 
 It is also worthnoting that **not all variables are used as predictors**. The variables are narrowed down through feature selection - i.e., experimenting with adding and removing variables until an optimal performance is achieved.
+
+The indicators used as predictors or independent variables are the following:
+- Age of the participants (discrete scale, 10-89)
+- Whether participants listen to music while working (binary variable, 0-1)
+- Whether participants play an instrument (binary variable, 0-1)
+- Whether participants compose music (binary variable, 0-1)
+- Whether participants actively explore new music (binary variable, 0-1)
+- Whether participants regularly listen to music in a language they are not fluent in (binary variable, 0-1)
+- The frequency with which participants listen to multiple music genres (discrete scale, 0-3)
 
 The resulting dataset - which is then used to build and train the models - can be downloaded in the dataset button at the top of this page.
 
@@ -489,11 +498,11 @@ plt.ylabel('Count')
 
 ## Build The Models
 
-Once the data has been transfomed and arranged as needed, we can talk about building our predictive models. 
+Once the data has been transformed and arranged as needed, we can talk about building our predictive models. 
 
 First, we will begin by splitting the data into a training set and a testing set. 
 
-Then, we will proceed with the actual fitting. Given that the outcome variable - the one we want to predict - is binary, the problem at hand is suiting for classification models. 
+Then, we will proceed with the actual fitting. Given that the outcome variable - the one we want to predict - is binary, the problem at hand can be handled through classification models. 
 
 With that in mind, these are the models that will be tested:
 - K-Nearest Neighbors
@@ -631,7 +640,7 @@ for clf in classifiers:
 The models result in varying levels of performance, bias and variance, flexibility, and interpretability. 
 - Based on the accuracy and the standard deviation, the models range from moderate to relatively consistent. 
 - In terms of flexibility and interpretability, K-Nearest Nieghbors and Decision Trees tend to be the most flexible and interpretable. 
-- Related to flexibility and interpretability, since we predicting mental disorders is a nuanced topic, it is likely the models that assume linearity (Support Vectors, Naive Bayes, Linear Discriminant Analysis) introduce greater bias than those that are able to better capture non-linear relationships (KNN and Decision Trees).
+- Since predicting mental disorders is a nuanced topic, it is likely that models that do not assume linearity (KNN and Decision Trees) introduce less bias than those that do assume it (Support Vectors, Naive Bayes, Linear Discriminant Analysis).
 
 With all that said and done, **K-Nearest Neighbors is the best performing model**.
 - It has the highest accuracy.

@@ -61,13 +61,13 @@ There are many ways one can approach social media, and there are surely thousand
 
 In that regard, this project is heavily influenced by Antropomedia's [unique vision on social media](https://antropomedia.agency/?lang=en) which has helped hundreds of organizations - from small businesses to world-renowned enterprises - increase their reach, value, and profitability.
 
-This path involves integrating social sciences - namely digital anthropology - with proprietary technology - namely sociograms. Data science methods are used to download and visualize the data, but social science concepts are used to make sense of this information.
+This vision involves integrating proprietary data science methods to download and visualize the data, and social science concepts to make sense of this information.
 
 ## Digital Anthropology
 
-It is a subfield of anthropology and some of the main voices in this field are Heather Horst and Daniel Miller, who authored a book called "Digital Anthropology" in 2012.
+Most social science concepts used in this project derive from digital anthropology, which is a subfield of anthropology.
 
-The core idea of this discipline is that it aims to understand life as understood by users in the light of digital environments.
+The core idea of this discipline is that it aims to understand life as understood by people in the light of digital environments.
 
 It is also worth noting that it is an interdisciplinary line of study, therefore concepts from other fields - such as sociology and social psychology - are drawn in to fully comprehend online behavior.
 
@@ -75,11 +75,13 @@ It is also worth noting that it is an interdisciplinary line of study, therefore
 
 This social media vision would not be possible without the premise behind the digital world: Most individuals have a social media profile or account and they leave behind a digital trace (or footprint) of their online behavior.
 
-Further, certain bits and pieces of this digital footprint can be publicly viewed and downloaded online without being unethical or infringing privacy policies (think how you can view who "likes" a post on Facebook).
+Further, certain bits and pieces of this digital footprint can be publicly viewed and downloaded online without being unethical or infringing privacy policies (to illustrate: think of how you can view who likes or comments a post on Facebook).
 
-Once this data is downloaded, network analysis enables a way to view and study this information - in this context, the nodes are social media profiles and the edges that connect each node are relationships between users (either because they engaged with the same posts or because they follow each other).
+Once this data is downloaded, network analysis enables a way to view and study this information. Put simply, network are a compilation of nodes (dots in a 2D space) connected through edges (the lines that connect each dot in a network).
 
-![svg](network.svg)
+In this context, the nodes are social media profiles and the edges that connect each node are relationships between users (either because they engaged with the same posts or because they follow each other).
+
+{{< figure src="network.svg" theme="light" >}}
 
 ---
 
@@ -106,9 +108,9 @@ Below is the resulting sociogram, where each color represents a different digita
 
 ## Digital Tribes
 
-Using maps as an analogy, a sociogram can show us the regions (digital tribes), the degree of connectivity between regions, and the steps needed to reach from one point to another (in network analysis, this would correspond to quantitative indicators such as centrality).
+Using maps as an analogy, a sociogram can show us the regions (digital tribes) and aspects such as the steps needed to reach from one point to another (in network analysis, this would correspond to quantitative metrics such as centrality).
 
-But same as with a map, this does not tell us the qualities of a region - and if it's an uncharted map, not even the names of the regions are provided. That's where digital ethnography comes in.
+But same as with a map, this does not tell us the qualities of a region - and sometimes not even names of the regions are provided, especially if it is an uncharted territory. In describing a map's regions is where digital ethnography comes in.
 
 After diving deep into the sociogram - i.e., analyzing hundreds or thousands of social media profiles - we can get a better understanding of each digital tribe.
 
@@ -129,8 +131,8 @@ In parallel with developing a description of our market segments, we can locate 
 Using the previous digital tribes as an example, these are some common elements we can find:
 - Tribe 1 are all about being creative and critical, hence one method to emulate their discourse is by posting thoughts and facts in an artistic way.
 - Tribe 2 value self-care, therefore some ways to connect with them is by posting motivational content, talking about caring for oneself, or even through humorous content.
-- Tribe 3 value information and professional growth, therefore showing achievements and sharing facts is a good way to connect.
-- Tribe 4 value experiences and one way to connect with them is through aesthetic images, thoughtful words, and moments of joy.
+- Tribe 3 value information and professional growth, therefore showing achievements and sharing scientific facts is a proper way to connect.
+- Tribe 4 value experiences and one way to connect with them is through aesthetic images, thoughtful words, and posting moments of joy.
 - Tribe 5 value looking and feeling good, so you can connect by posting enjoyable content (visually appealing, funny, aesthetic).
 
 Below is just one example of a real image posted by a Tribe 2 on social media, where the highlight is that this is content that anyone can replicate - and in doing so, you are immediately connecting with this market segment.
@@ -141,17 +143,15 @@ Below is just one example of a real image posted by a Tribe 2 on social media, w
 
 # 3. Crafting Your Own Marketing Strategy
 
-At this point, we are able to uncover distinct market segments and these market segments are based on user's actual behavior, rather than how we *think* they behave.
-
-Further, we know how they speak, other brands they follow, what they post, and what they value. That may sound creepy - but it is purely based on evidence we can all access (think of how you observe people passing by when you're sitting at a park).
+At this point, we are able to uncover distinct market segments and these market segments are based on user's actual behavior, rather than how we *think* they behave - and perhaps most importantly, **we know what they value**.
 
 Not only that, but if we analyze other social media profiles (contrast accounts), we have a big enough sample to say we have a pulse of the market, therefore we can make an informed decision of what course of action to take.
 
 From here, it is up to the person or organization to ponder the findings and figure what fits best for the objective at hand. 
 
-This process involves thinking about authenticity - i.e., does a certain strategy align with my core values? Or, is this how I want to portray myself, my brand, or my organization?
+This process involves thinking about authenticity - i.e., does a certain strategy align with my core values? Or, is this how I want to portray myself and my brand?
 
-But perhaps most importantly, it is also a matter of ethics. Even if you are not a healthcare provider, you are putting your content out for the world to see. One must at least ask: Will this help me reach my objective and, if so, at what cost? Or a level deeper of that question would be: Is this information factual and will it help others?
+Lastly, defining a strategy also implies thinking about ethics. Even if you are not a healthcare provider, you are putting your content out for the world to see. And ideal question would be to ask: Is this information factual and will it help myself as well as others?
 
 {{% callout note %}}
 
