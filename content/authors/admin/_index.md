@@ -4,10 +4,10 @@ education:
   courses:
   - course: MSc in Data Analytics and Computational Social Science
     institution: University of Massachusetts Amherst
-    year: 2024 (expected)
+    # year: 2024 (expected)
   - course: BA in Psychology
     institution: ITESO University, Mexico
-    year: 2018
+    # year: 2018
 email: ""
 first_name: Miguel
 highlight_name: true

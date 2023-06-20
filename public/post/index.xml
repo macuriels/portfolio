@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Miguel Curiel</title>
+    <link>https://macuriels.com/post/</link>
+      <atom:link href="https://macuriels.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 03 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://macuriels.com/media/icon_hu600c6af16f22b9ec114ceed320517907_15363_512x512_fill_lanczos_center_3.png</url>
+      <title>Posts</title>
+      <link>https://macuriels.com/post/</link>
+    </image>
+    
+    <item>
+      <title>How I Created This Website</title>
+      <link>https://macuriels.com/post/website-creation/</link>
+      <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://macuriels.com/post/website-creation/</guid>
+      <description>&lt;p&gt;This is a walkthrough of how I created this website using R in combination with several other tools. This post is mostly a note-to-self in case I ever need to recreate this effort, but it may also assist you in creating your own website.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;A NOTE OF CAUTION&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It is worth noting that this post is straightforward and simplistic, therefore it is not comprehensive and does not cover bugs you may encounter along the way. If you do encounter issues, as with most coding issues, I recommend Googling or using generative AI platforms (such as ChatGPT) to search for possible solutions.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;WHAT YOU&amp;rsquo;LL NEED&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Latest version of R&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Latest version of RStudio&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;code&gt;blogdown&lt;/code&gt; package in RStudio&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; GitHub account&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Netlify account&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Wowchemy website template (recommended: Hugo Academic)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Optional: Knowledge of other programming languages (Python, HTML)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Optional: Jupyter Notebooks&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Optional: A web domain&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;STEP BY STEP&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This breakdown is heavily influenced by Alison Hill&amp;rsquo;s &lt;a href=&#34;https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;magnificent tutorial&lt;/a&gt; which I highly recommend you read regardless of this walkthrough.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Download the latest version of R and RStudio.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;R is a programming language and RStudio is an integrated development environment or user interface to code in R. Both are free and open-source, so you can easily download them on RStudio&amp;rsquo;s official website (it changes names time from time so I will not add a URL, but as of the time of this post, you can find it on posit.co)&lt;/li&gt;
+&lt;li&gt;This step can be nuanced and complex depending on the operating system you are using or if you are a complete newcomer to these programs - if so, I would recommend searching on Google or YouTube for further tutorials on this step.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to GitHub and login to your account or create a new one.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub is an online platform that allows you to save changes online - that way, any changes made to your website using R and RStudio will live not only in your computer (plus we need this platform to download and update the website template).&lt;/li&gt;
+&lt;li&gt;If this is your first time using the software, some common terms you&amp;rsquo;ll want to become acquainted with are &lt;strong&gt;repository, push, pull, fork, commit, and version control.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create new repository in GitHub.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Once in GitHub, you will need to create a folder (or repository, often abbreviated as repo). This is where the code underlying your website will live online.&lt;/li&gt;
+&lt;li&gt;Once you have created your repository, go to the main page of this newly created repo, click on the green &lt;strong&gt;clone or download&lt;/strong&gt; button and copy either the &lt;strong&gt;SSH or HTTPS&lt;/strong&gt;. If you are a newbie, choose HTTPS - it is slighltly less secure, whereas SSH allows for enhanced encryption but requires additional steps to set up (if you&amp;rsquo;re interested, I also recommend Googling or YouTubing this solution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create new project in RStudio.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Once we have the online folder, we will want to create its equivalent on your local computer. To do so, you will open RStudio &amp;gt; click File &amp;gt; New Project &amp;gt; Version Control &amp;gt; Git.&lt;/li&gt;
+&lt;li&gt;Paste the URL you copied from GitHub (SSH or HTTPS), be intentional with the name you want to assign (it can be either the name you have online, or a different name for you to locate the folder easier on your local computer), and click on create project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use the blogdown package in RStudio to download website template.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Packages are a compilation of R codes and functions, and can be stored in the form of libraries in RStudio. Developers build these to accomplish specific tasks and, ultimately, save them - and by extension, anyone who downloads them - time.&lt;/li&gt;
+&lt;li&gt;There are a couple of ways you can download and set up blogdown - either by using code or by going directly into RStudio&amp;rsquo;s Packages tab and searching for it (I personally prefer the latter). Once you have done so, run the lines of code below in your RStudio Console tab.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;PLEASE READ BEFORE MOVING ON&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It is important to note that this website is possible thanks to Wowchemy. They are a group of developers who strive to empower creators by offering free, open-source website templates, which are essentially building blocks that you can rearrange and edit at will. This website is built using their &lt;a href=&#34;https://academic-demo.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic template&lt;/a&gt;, but you can explore many more on &lt;a href=&#34;https://wowchemy.com/templates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;their website&lt;/a&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;## COPY AND PASTE THE TWO LINES BELOW IN YOUR R/RSTUDIO CONSOLE&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;## CHANGE starter-academic ACCORDINGLY IF YOU WANT TO USE ANOTHER TEMPLATE&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;## WAIT FOR THEM TO RUN BEFORE MOVING ON&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;library&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;blogdown&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;new_site&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;theme&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;wowchemy/starter-academic&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;## ONCE THE LINES ABOVE HAVE RAN, COPY AND PASTE THE CODE BELOW&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;## THIS WILL RENDER A PREVIEW OF YOUR WEBSITE!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;blogdown&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;serve_site&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Publish the website using Netlify.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you have done everything so far without issues, you may have seen a preview of your website in RStudio or your predetermined web browser. Now comes my personal favorite part - deploying it to an actual website that people can visit! To do so, simply go to netlify.com, &lt;strong&gt;sign up or log in using your GitHub account&lt;/strong&gt;, select New Site from Git &amp;gt; Continuous Deployment: Github &amp;gt; pick the repo where you have your website files &amp;gt; click on Deploy Site &amp;gt; Et Voila, you have your own website!&lt;/li&gt;
+&lt;li&gt;Even though you can implement this step later on, I recommend doing it first with the template so that you can see all of your hard work published online. This will allow you to browse what you created based on other developer&amp;rsquo;s works, get a sense of the website&amp;rsquo;s current layout, and begin the possibilities of your content (if you haven&amp;rsquo;t already done so).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update or create content.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Even though all of the work is based off of templates, I advise &lt;strong&gt;extreme caution&lt;/strong&gt; with your first updates - take it from me, who had to scrape two websites because the updates yielded undesired results and I was not able to revert them (and the whole point of using GitHub is to have version control so you can easily go back to previous versions of your work, but at the time of my first attempts, using this feature was beyond my knowledge).&lt;/li&gt;
+&lt;li&gt;At this point, the world is your oyster - and by that, I mean you can mix and match the content within the realm of possibilites offered by your Hugo template. &lt;strong&gt;Any time you add, edit, or delete ANY file in your local website folder, you must select your changes on the Git tab in RStudio, click on commit, ideally add a message that summarizes the updates, click on commit again and push.&lt;/strong&gt; This will add the changes to your online repository (GitHub) and are pushed into your actual website (Netlify) shortly after that.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;Click to view some (poorly written) shortcuts to edit your website&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;To modify favicon: assets &amp;gt; media &amp;gt; icon.jpeg&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To update website name AND tagline in web browser tab: config &amp;gt; _default &amp;gt; params.yml&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To update website description and sharing license: config &amp;gt; _default &amp;gt; params.yml&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To edit landing page: content &amp;gt; _index.md&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To edit first block with bio, interests and education: content &amp;gt; authors &amp;gt; admin &amp;gt; index.md&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To update profile pic: content &amp;gt; authors &amp;gt; admin &amp;gt; avatar.jpeg&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To add an image to a project: Go to Canva’s Text to Image feature &amp;gt; file size 1125 x 1125&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To add a Tableau project: Go to Tableau viz you want to add (on Tableau), click on share, copy code (under “Embed Code”), paste that into the .md file, and you’re all set!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To edit main menu:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Main menu stuff lives in: config &amp;gt; _default &amp;gt; menus&lt;/li&gt;
+&lt;li&gt;To make it so that buttons lead to new page, change hash (e.g., #posts) in url section for slash (e.g., /post/).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To add a Jupyter Notebook post:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Convert the ipynb file to md file by going to the terminal, changing the work directory to wherever the ipynb file is (e.g., if it’s in a folder in downloads: cd Downloads/jupyter) then run this code: jupyter nbconvert &amp;ndash;to markdown YourNotebook.ipynb&lt;/li&gt;
+&lt;li&gt;This should have created a new md file, and also very likely a new folder with all of the images.&lt;/li&gt;
+&lt;li&gt;Created a new folder in content &amp;gt; post with the desired name of the blog post which will show up in the URL. Each word should be separated with hyphens instead of spaces (e.g., predict-depression-with-music).&lt;/li&gt;
+&lt;li&gt;Drag or copy the md file and the new folder with images (if applicable) to the folder you just created in content &amp;gt; post &amp;gt; new-folder.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Optional: Link your website to your own domain.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You may have noticed that your website name has an extravagant name. Netlify automatically assigns these names, but within Netlify you can either purchase a domain of your choosing or link your website to a domain you already had.&lt;/li&gt;
+&lt;li&gt;For example, in my case I had previously purchased my domain - macuriels.com - via WordPress. As of the time of this writing, the domain is still managed through WordPress, but I made it so that whenever someone types my domain, it redirects to my Netlify website. The nuances of this are beyond my knowledge, but I do know that any host - including Netlify - provides instructions on doing any of the above actions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;ADDITIONAL REFERENCES&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Creating my own website was a highly iterative process that took watching and reading ton of tutorials, as well as taking inspiration from other colleague&amp;rsquo;s works. These are some of the sources I used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A special shoutout to professor Weiai Wayne Xu and his &lt;a href=&#34;https://curiositybits.cc/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;website&lt;/a&gt;. I had the pleasure of taking a class with him (Digital Behavioral Data) during my master&amp;rsquo;s program, I was inspired by his website and he provided the first reference to using R (specifically, the blogdown library) and the Hugo Academic theme (one of the many open-source themes provided by Wowchemy) to build a website.&lt;/li&gt;
+&lt;li&gt;Alison Hill&amp;rsquo;s &lt;a href=&#34;https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorial&lt;/a&gt; to set up your own website from scratch using R (blogdown) and Hugo website templates. This was the most accurate and straightforward tutorial I could find.&lt;/li&gt;
+&lt;li&gt;Kyle Chan&amp;rsquo;s &lt;a href=&#34;https://www.kyleichan.com/post/hugo-academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorial&lt;/a&gt; to set up your own website from scratch using R (blogdown) and Hugo website templates. In contrast to Alison&amp;rsquo;s tutorial (mentioned above), I found Kyle&amp;rsquo;s to be more comprehensive - but because of that, also harder to follow.&lt;/li&gt;
+&lt;li&gt;Yihui Xie&amp;rsquo;s &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;book&lt;/a&gt; to set up your own website from scratch using R (blogdown). Unlike the previous blog posts (Alison and Kyle&amp;rsquo;s), the book is even more extensive and focuses heavily on the ins and outs of of blogdown - which makes sense as Yihui is the developer behind blogdown!&lt;/li&gt;
+&lt;li&gt;Wowchemy&amp;rsquo;s &lt;a href=&#34;https://wowchemy.com/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official documentation&lt;/a&gt; which includes tips and tricks to use your Hugo themed website proficiently.&lt;/li&gt;
+&lt;li&gt;Wowchemy&amp;rsquo;s &lt;a href=&#34;https://academic-demo.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sample website&lt;/a&gt; template which is the base I used for this website.&lt;/li&gt;
+&lt;li&gt;Philip Daniel&amp;rsquo;s &lt;a href=&#34;https://www.philipdaniels.com/blog/2016/hugo-blogging-cheatsheet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo cheatsheet&lt;/a&gt;, which is extremely helpful when you&amp;rsquo;re personalizing your Hugo website.&lt;/li&gt;
+&lt;li&gt;John Sorrentino&amp;rsquo;s side-project called favicon.io, which is a &lt;a href=&#34;https://favicon.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;free icon generator&lt;/a&gt; and which I used to generate my website&amp;rsquo;s icon (a letter &amp;ldquo;m&amp;rdquo; in cursive writing with a blue backgroun)&lt;/li&gt;
+&lt;li&gt;Other options I know exist to create, update, and host websites, but I did not explore thoroughly: GitHub websites, WordPress, GoDaddy, Wix, and Squarespace. I ultimately chose to use RStudio and Hugo templates because I wanted to create a relatively straightforward website where I can showcase my R/RStudio, Jupyter Notebooks/Python and Tableau projects; but it seems to me that the alternatives offer greater flexibility and are more apt for complex visualizations, blogging, and e-commerce.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

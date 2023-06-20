@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shiny | Miguel Curiel</title>
+    <link>https://macuriels.com/tag/shiny/</link>
+      <atom:link href="https://macuriels.com/tag/shiny/index.xml" rel="self" type="application/rss+xml" />
+    <description>Shiny</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://macuriels.com/media/icon_hu600c6af16f22b9ec114ceed320517907_15363_512x512_fill_lanczos_center_3.png</url>
+      <title>Shiny</title>
+      <link>https://macuriels.com/tag/shiny/</link>
+    </image>
+    
+    <item>
+      <title>Netflix Trend Analysis</title>
+      <link>https://macuriels.com/project/netflix-trend-analysis/</link>
+      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://macuriels.com/project/netflix-trend-analysis/</guid>
+      <description>&lt;p&gt;Click &lt;a href=&#34;https://macuriels.shinyapps.io/finalproject_miguelcuriel/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;here&lt;/strong&gt;&lt;/a&gt; to view an interactive dashboard with the social media and web insights for Netflix.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;PROJECT SUMMARY&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This is a repurposed analysis of a final project made for graduate-level Data Science class which analyzes Netflix trends using the &lt;code&gt;gtrendsR&lt;/code&gt; and &lt;code&gt;rtweet&lt;/code&gt; packages in R to download data from Google Trends and Twitter, respectively.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Google Trends data for Netflix (and other streaming services) is downloaded from October-December 2022; Twitter data is downloaded from December 4-7 for tweets containing #netflix.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Google Trends data revealed a cyclical peak in interest for Netflix searches, usually reaching its highest point on Sundays. Additionally, associated Google searches are related to popular releases during the time of the analysis.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Twitter analysis (hashtag network and map) reaffirms the idea that popular releases are central to the conversation around Netflix. Additionally, the brand has worldwide impact and is also seen associated with topics in mainstream media, such as FIFA or NFTs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

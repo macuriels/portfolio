@@ -1,0 +1,2016 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: June 20, 2023 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.047268c6dd09ad74ba54a0ba71837064.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.042e26407c9e383d96a1f26d6787c686.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Miguel Curiel" />
+
+
+
+
+
+  
+
+<meta name="description" content="Using Python to build machine learning models and predict depression based on music preferences." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://macuriels.com/project/predicting-depression-with-music/" />
+<link rel="canonical" href="https://macuriels.com/project/predicting-depression-with-music/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu600c6af16f22b9ec114ceed320517907_15363_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu600c6af16f22b9ec114ceed320517907_15363_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://macuriels.com/project/predicting-depression-with-music/featured.jpg" />
+<meta property="og:site_name" content="Miguel Curiel" />
+<meta property="og:url" content="https://macuriels.com/project/predicting-depression-with-music/" />
+<meta property="og:title" content="Predicting Depression Based on Musical Taste | Miguel Curiel" />
+<meta property="og:description" content="Using Python to build machine learning models and predict depression based on music preferences." /><meta property="og:image" content="https://macuriels.com/project/predicting-depression-with-music/featured.jpg" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2023-05-28T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2023-05-28T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://macuriels.com/project/predicting-depression-with-music/"
+  },
+  "headline": "Predicting Depression Based on Musical Taste",
+  
+  "image": [
+    "https://macuriels.com/project/predicting-depression-with-music/featured.jpg"
+  ],
+  
+  "datePublished": "2023-05-28T00:00:00Z",
+  "dateModified": "2023-05-28T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Miguel Curiel"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Miguel Curiel",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://macuriels.com/media/icon_hu600c6af16f22b9ec114ceed320517907_15363_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Using Python to build machine learning models and predict depression based on music preferences."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Predicting Depression Based on Musical Taste | Miguel Curiel</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="db58da8067a991cbed2057c17df6b0e9" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Miguel Curiel</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Miguel Curiel</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>About</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/project/"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/post/"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://www.linkedin.com/in/macuriels/" target="_blank" rel="noopener"><span>Let's Connect</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="/"  aria-label="">
+                <i class="fas fa-" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Predicting Depression Based on Musical Taste</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Miguel Curiel</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    May 28, 2023
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/macuriels/umass_dacss_machinelearning/blob/main/predicting_depression_with_music_code.ipynb" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="/files/mxmh_clean.csv" target="_blank" rel="noopener">
+  Dataset
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 720px;">
+  <div style="position: relative">
+    <img src="/project/predicting-depression-with-music/featured_hu6d3828024252c4eb49c722fcf2b34a9b_80836_720x2500_fit_q75_h2_lanczos.webp" width="720" height="720" alt="" class="featured-image">
+    <span class="article-header-caption">Image generated using Canva&rsquo;s Text to Image AI generator</span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h1 id="predicting-depression-based-on-musical-taste">Predicting Depression Based on Musical Taste</h1>
+<p>This is a repurposed analysis of a final project made for graduate-level Data Science class.</p>
+<div class="alert alert-note">
+  <div>
+    <p><strong>PROJECT SUMMARY</strong></p>
+<ul>
+<li>
+<p>This project develops machine learning models to attempt to predict depression based on a free survey dataset with over 700 responses (<a href="https://www.kaggle.com/datasets/catherinerasgaitis/mxmh-survey-results" target="_blank" rel="noopener">Music x Mental Health Traits</a>).</p>
+</li>
+<li>
+<p>Five classification models are explored: K-Nearest Neighbors, Naive Bayes, Decision Tree, Support Vector Machine, and Linear Discriminant Analysis.</p>
+</li>
+<li>
+<p>All models achieve a moderate performance, with K-Nearest Neighbors being the best in terms of performance, interpretability, and flexibility.</p>
+</li>
+<li>
+<p>Even though all models perform decently, mental health is a complex topic, the assumptions underlying the models are simplistic, and implementing them would require evaluating the ethical implications.</p>
+</li>
+</ul>
+  </div>
+</div>
+<hr>
+<p>Having a background in psychology and having played guitar for over 15 years, music and mental health are two topics near and dear to me. It&rsquo;s well known that mental disorders affect millions worldwide, and their impact on individuals and society is significant.</p>
+<p>While the causes of mental disorders are complex and multifaceted, researchers have long recognized that environmental factors, such as social and cultural influences, can play a role in their development. Therefore, this project aims to explore <strong>whether machine learning algorithms can predict depression based on music preferences and streaming behaviors</strong>.</p>
+<p>This post is divided as follows:</p>
+<ol>
+<li>Explore the data</li>
+<li>Transform the data</li>
+<li>Build the models</li>
+<li>Come to conclusions</li>
+</ol>
+<hr>
+<h2 id="explore-the-data">Explore The Data</h2>
+<p>This project relies on the <strong>programming language, Python</strong>, to explore and transform the <strong>MxMT (Music x Mental Health Traits) dataset</strong>, which is a survey dataset that contains responses from over 700 individuals about their music preferences and mental health traits.</p>
+<p>The survey was conducted online from August to November 2022, it was mostly distributed through online channels (such as Reddit), and did not limit participants by age or location.</p>
+<p>Below is a snippet of the raw dataset as well as some graphics exploring missingness in the data, the distribution of some of the main (numerical) columns, and the correlation among variables. The full dataset can also be accessed online for free here:</p>
+<p><a href="https://www.kaggle.com/datasets/catherinerasgaitis/mxmh-survey-results" target="_blank" rel="noopener">https://www.kaggle.com/datasets/catherinerasgaitis/mxmh-survey-results</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># linear algebra</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> <span class="c1"># data processing</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1"># fundamental visualization</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span> <span class="c1"># advanced visualization built on top of matplotlib</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&#34;mxmh_survey_results.csv&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># set max_columns option to None to show all columns</span>
+</span></span><span class="line"><span class="cl"><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Timestamp</th>
+      <th>Age</th>
+      <th>Primary streaming service</th>
+      <th>Hours per day</th>
+      <th>While working</th>
+      <th>Instrumentalist</th>
+      <th>Composer</th>
+      <th>Fav genre</th>
+      <th>Exploratory</th>
+      <th>Foreign languages</th>
+      <th>BPM</th>
+      <th>Frequency [Classical]</th>
+      <th>Frequency [Country]</th>
+      <th>Frequency [EDM]</th>
+      <th>Frequency [Folk]</th>
+      <th>Frequency [Gospel]</th>
+      <th>Frequency [Hip hop]</th>
+      <th>Frequency [Jazz]</th>
+      <th>Frequency [K pop]</th>
+      <th>Frequency [Latin]</th>
+      <th>Frequency [Lofi]</th>
+      <th>Frequency [Metal]</th>
+      <th>Frequency [Pop]</th>
+      <th>Frequency [R&amp;B]</th>
+      <th>Frequency [Rap]</th>
+      <th>Frequency [Rock]</th>
+      <th>Frequency [Video game music]</th>
+      <th>Anxiety</th>
+      <th>Depression</th>
+      <th>Insomnia</th>
+      <th>OCD</th>
+      <th>Music effects</th>
+      <th>Permissions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>8/27/2022 19:29:02</td>
+      <td>18.0</td>
+      <td>Spotify</td>
+      <td>3.0</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Latin</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>156.0</td>
+      <td>Rarely</td>
+      <td>Never</td>
+      <td>Rarely</td>
+      <td>Never</td>
+      <td>Never</td>
+      <td>Sometimes</td>
+      <td>Never</td>
+      <td>Very frequently</td>
+      <td>Very frequently</td>
+      <td>Rarely</td>
+      <td>Never</td>
+      <td>Very frequently</td>
+      <td>Sometimes</td>
+      <td>Very frequently</td>
+      <td>Never</td>
+      <td>Sometimes</td>
+      <td>3.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>I understand.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>8/27/2022 19:57:31</td>
+      <td>63.0</td>
+      <td>Pandora</td>
+      <td>1.5</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Rock</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>119.0</td>
+      <td>Sometimes</td>
+      <td>Never</td>
+      <td>Never</td>
+      <td>Rarely</td>
+      <td>Sometimes</td>
+      <td>Rarely</td>
+      <td>Very frequently</td>
+      <td>Rarely</td>
+      <td>Sometimes</td>
+      <td>Rarely</td>
+      <td>Never</td>
+      <td>Sometimes</td>
+      <td>Sometimes</td>
+      <td>Rarely</td>
+      <td>Very frequently</td>
+      <td>Rarely</td>
+      <td>7.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>I understand.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>8/27/2022 21:28:18</td>
+      <td>18.0</td>
+      <td>Spotify</td>
+      <td>4.0</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Video game music</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>132.0</td>
+      <td>Never</td>
+      <td>Never</td>
+      <td>Very frequently</td>
+      <td>Never</td>
+      <td>Never</td>
+      <td>Rarely</td>
+      <td>Rarely</td>
+      <td>Very frequently</td>
+      <td>Never</td>
+      <td>Sometimes</td>
+      <td>Sometimes</td>
+      <td>Rarely</td>
+      <td>Never</td>
+      <td>Rarely</td>
+      <td>Rarely</td>
+      <td>Very frequently</td>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>10.0</td>
+      <td>2.0</td>
+      <td>No effect</td>
+      <td>I understand.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>8/27/2022 21:40:40</td>
+      <td>61.0</td>
+      <td>YouTube Music</td>
+      <td>2.5</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Jazz</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>84.0</td>
+      <td>Sometimes</td>
+      <td>Never</td>
+      <td>Never</td>
+      <td>Rarely</td>
+      <td>Sometimes</td>
+      <td>Never</td>
+      <td>Very frequently</td>
+      <td>Sometimes</td>
+      <td>Very frequently</td>
+      <td>Sometimes</td>
+      <td>Never</td>
+      <td>Sometimes</td>
+      <td>Sometimes</td>
+      <td>Never</td>
+      <td>Never</td>
+      <td>Never</td>
+      <td>9.0</td>
+      <td>7.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>Improve</td>
+      <td>I understand.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>8/27/2022 21:54:47</td>
+      <td>18.0</td>
+      <td>Spotify</td>
+      <td>4.0</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>R&amp;B</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>107.0</td>
+      <td>Never</td>
+      <td>Never</td>
+      <td>Rarely</td>
+      <td>Never</td>
+      <td>Rarely</td>
+      <td>Very frequently</td>
+      <td>Never</td>
+      <td>Very frequently</td>
+      <td>Sometimes</td>
+      <td>Sometimes</td>
+      <td>Never</td>
+      <td>Sometimes</td>
+      <td>Very frequently</td>
+      <td>Very frequently</td>
+      <td>Never</td>
+      <td>Rarely</td>
+      <td>7.0</td>
+      <td>2.0</td>
+      <td>5.0</td>
+      <td>9.0</td>
+      <td>Improve</td>
+      <td>I understand.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># assessing null values</span>
+</span></span><span class="line"><span class="cl"><span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">(),</span> <span class="n">yticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cbar</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>&lt;AxesSubplot:&gt;
+</code></pre>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_7_1_hu5ef810849cce7e4f79a49ee7df75908b_46139_e61dbac50fa8361c9a25d22fd95fcd5e.webp 400w,
+               /project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_7_1_hu5ef810849cce7e4f79a49ee7df75908b_46139_56509176d2e7e837576866271e81dd7a.webp 760w,
+               /project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_7_1_hu5ef810849cce7e4f79a49ee7df75908b_46139_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_7_1_hu5ef810849cce7e4f79a49ee7df75908b_46139_e61dbac50fa8361c9a25d22fd95fcd5e.webp"
+               width="515"
+               height="614"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># plotting histogram for numerical columns</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="s1">&#39;Hours per day&#39;</span><span class="p">,</span> <span class="s1">&#39;Anxiety&#39;</span><span class="p">,</span> <span class="s1">&#39;Depression&#39;</span><span class="p">,</span> <span class="s1">&#39;Insomnia&#39;</span><span class="p">,</span> <span class="s1">&#39;OCD&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>array([[&lt;AxesSubplot:title={'center':'Age'}&gt;,
+        &lt;AxesSubplot:title={'center':'Hours per day'}&gt;],
+       [&lt;AxesSubplot:title={'center':'Anxiety'}&gt;,
+        &lt;AxesSubplot:title={'center':'Depression'}&gt;],
+       [&lt;AxesSubplot:title={'center':'Insomnia'}&gt;,
+        &lt;AxesSubplot:title={'center':'OCD'}&gt;]], dtype=object)
+</code></pre>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_8_1_hubd274754504cc361f4529b8d7f0f74f8_40853_72534e790e7a5f589618df57dc610e38.webp 400w,
+               /project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_8_1_hubd274754504cc361f4529b8d7f0f74f8_40853_7d2fef6be64690fc5b4cfa35e65709b6.webp 760w,
+               /project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_8_1_hubd274754504cc361f4529b8d7f0f74f8_40853_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_8_1_hubd274754504cc361f4529b8d7f0f74f8_40853_72534e790e7a5f589618df57dc610e38.webp"
+               width="760"
+               height="757"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># plotting correlation matrix</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># loop over all columns in the dataframe</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># check if the column is not of float data type</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span> <span class="o">!=</span> <span class="s1">&#39;float64&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># apply label encoder to the column</span>
+</span></span><span class="line"><span class="cl">        <span class="n">le</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">le</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl"><span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">,</span> <span class="n">vmin</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span>
+</span></span><span class="line"><span class="cl">            <span class="p">,</span> <span class="n">yticklabels</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>&lt;AxesSubplot:&gt;
+</code></pre>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_9_1_hu3109e722028c9f803cd86d5aad78428c_109646_2c748b44a3570217fbec0ccdad47664b.webp 400w,
+               /project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_9_1_hu3109e722028c9f803cd86d5aad78428c_109646_4a1220edacd51267704a27ea1cef838a.webp 760w,
+               /project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_9_1_hu3109e722028c9f803cd86d5aad78428c_109646_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_9_1_hu3109e722028c9f803cd86d5aad78428c_109646_2c748b44a3570217fbec0ccdad47664b.webp"
+               width="737"
+               height="620"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>From the exploratory section, we can conclude that:</p>
+<ul>
+<li>The dataset contains 33 variables.</li>
+<li>The variables can be roughly divided in three blocks: Demographics/behaviors, music genres, and mental health.</li>
+<li>The dataset seems complete for the most part, with the exception of the BPM variable which has a higher degree of missingness.</li>
+<li>Most respondents are 18-30 years old.</li>
+<li>Anxiety and depression are the most common disorders.</li>
+<li>Only a minority of variables seem to be highly correlated.</li>
+</ul>
+<hr>
+<h2 id="transforming-the-data">Transforming The Data</h2>
+<p>Based on the findings from the exploratory section, below are the actions implemented to preprocess the data:</p>
+<ul>
+<li>Create a dataframe that includes only the variables of interest</li>
+<li>Remove null values</li>
+<li>Deal with outliers in the daily hours spent listening to music</li>
+<li>Transform dependent variable (depression) from a discrete scale (1-10) to a binary one (1-5 will be 0, 6-10 will be 1)</li>
+<li>Encode categorical columns (including the target variable) so that they can be properly processed by the machine learning algorithms</li>
+</ul>
+<p>Something important to highlight is the decision to <strong>transform depression from a 1-10 scale to a binary (0-1) variable</strong>.</p>
+<p>Even though mental disorders arguably have varying degrees to them, this decision is made to resemble how a diagnosis would be made: People who fit certain criteria are diagnosed with a disorder (in this case, thos who responded 6-10 are labeled as having a depression).</p>
+<p>Having depression as a binary variable not be the best for real life scenarios, but can increase the interpretability and can pave the way for follow-up analysis (more of this discussion can be found at the end of the post).</p>
+<p>It is also worthnoting that <strong>not all variables are used as predictors</strong>. The variables are narrowed down through feature selection - i.e., experimenting with adding and removing variables until an optimal performance is achieved.</p>
+<p>The indicators used as predictors or independent variables are the following:</p>
+<ul>
+<li>Age of the participants (discrete scale, 10-89)</li>
+<li>Whether participants listen to music while working (binary variable, 0-1)</li>
+<li>Whether participants play an instrument (binary variable, 0-1)</li>
+<li>Whether participants compose music (binary variable, 0-1)</li>
+<li>Whether participants actively explore new music (binary variable, 0-1)</li>
+<li>Whether participants regularly listen to music in a language they are not fluent in (binary variable, 0-1)</li>
+<li>The frequency with which participants listen to multiple music genres (discrete scale, 0-3)</li>
+</ul>
+<p>The resulting dataset - which is then used to build and train the models - can be downloaded in the dataset button at the top of this page.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># read in data again in case any changes were made during the EDA</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&#34;mxmh_survey_results.csv&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># create new dataframe excluding variables that are NOT of interest</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Timestamp&#39;</span><span class="p">,</span> <span class="s1">&#39;BPM&#39;</span><span class="p">,</span> <span class="s1">&#39;Anxiety&#39;</span><span class="p">,</span> <span class="s1">&#39;OCD&#39;</span><span class="p">,</span> <span class="s1">&#39;Insomnia&#39;</span><span class="p">,</span> <span class="s1">&#39;Permissions&#39;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">,</span> <span class="s1">&#39;Music effects&#39;</span><span class="p">,</span> <span class="s1">&#39;Fav genre&#39;</span><span class="p">,</span> <span class="s1">&#39;Primary streaming service&#39;</span>
+</span></span><span class="line"><span class="cl">             <span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># remove all rows with null values</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># treat outliers in the hours spent listening to music</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## some people said they spend over 10 hours listening to music</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## while this is indeed possible, I will treat it as trolls or simply incorrect answers</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## I will use an arbitrary cut off value - anything above 10 hours will be limited to 10 hours</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Hours per day&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Hours per day&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">10</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="k">else</span> <span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># recode depression levels 0-10 to a binary variable</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># anything from 0-5 will be 0, anything from 6-10 will be 1</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Depression&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Depression&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">6</span> <span class="k">else</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># encode categorical columns</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># create label encoder instance</span>
+</span></span><span class="line"><span class="cl"><span class="n">lb_make</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># loop over all columns in the dataframe</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># check if the column is not of float data type</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span> <span class="o">!=</span> <span class="s1">&#39;float64&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># apply label encoder to the column</span>
+</span></span><span class="line"><span class="cl">        <span class="n">le</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">le</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl"><span class="c1"># convert mental disorders to a category        </span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Depression&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lb_make</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Depression&#39;</span><span class="p">])</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># plotting new distribution of dependent variable</span>
+</span></span><span class="line"><span class="cl"><span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Depression&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Adding labels to the plot</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Depression (0=no depression)&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Count&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>Text(0, 0.5, 'Count')
+</code></pre>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_14_1_hufc645d97b2f75c6500033c017d7de065_11297_3c213754ca1bced38d48a502d5070a03.webp 400w,
+               /project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_14_1_hufc645d97b2f75c6500033c017d7de065_11297_456b2aed94ee58fd47766f2cae1fb0ec.webp 760w,
+               /project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_14_1_hufc645d97b2f75c6500033c017d7de065_11297_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/project/predicting-depression-with-music/index_files/predicting_depression_with_music_summary_14_1_hufc645d97b2f75c6500033c017d7de065_11297_3c213754ca1bced38d48a502d5070a03.webp"
+               width="571"
+               height="432"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<hr>
+<h2 id="build-the-models">Build The Models</h2>
+<p>Once the data has been transformed and arranged as needed, we can talk about building our predictive models.</p>
+<p>First, we will begin by splitting the data into a training set and a testing set.</p>
+<p>Then, we will proceed with the actual fitting. Given that the outcome variable - the one we want to predict - is binary, the problem at hand can be handled through classification models.</p>
+<p>With that in mind, these are the models that will be tested:</p>
+<ul>
+<li>K-Nearest Neighbors</li>
+<li>Naive Bayes</li>
+<li>Decision Tree</li>
+<li>Support Vector Machines</li>
+<li>Linear Discriminant Analysis</li>
+</ul>
+<p>Lastly, once all models are fitted, we will compare them and see which performs best in terms of predicting depression (if any).</p>
+<p>Some common metrics to evaluate classification models include accuracy and the F1 score, but given that the classes of the outcome variable (depression) are unbalanced - meaning that there are significantly more people without depression - the Macro F1 score is a better metric to determine each model&rsquo;s performance.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">## SPLIT THE DATA</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># split the dataframe into a feature matrix and a target vector</span>
+</span></span><span class="line"><span class="cl"><span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Depression&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># selecting everything but the target variable</span>
+</span></span><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Depression&#39;</span><span class="p">]</span>  <span class="c1"># selecting the target variable</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># create instance with scaler function</span>
+</span></span><span class="line"><span class="cl"><span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># rescale independent variables</span>
+</span></span><span class="line"><span class="cl"><span class="n">X</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#30% of the train.csv is assigned to the validation set</span>
+</span></span><span class="line"><span class="cl"><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## K-NEAREST NEIGHBORS</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># create instance with knn function and parameter</span>
+</span></span><span class="line"><span class="cl"><span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="s1">&#39;distance&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># fit the model</span>
+</span></span><span class="line"><span class="cl"><span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## NAIVE BAYES</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># generate instance with naive bayes function</span>
+</span></span><span class="line"><span class="cl"><span class="n">nb_model</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># fit model</span>
+</span></span><span class="line"><span class="cl"><span class="n">nb_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## DECISION TREE</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># initialize the decision tree classifier</span>
+</span></span><span class="line"><span class="cl"><span class="n">clf</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># fit the classifier to the training data</span>
+</span></span><span class="line"><span class="cl"><span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## SUPPORT VECTOR MACHINE</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">svm</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># create an SVM classifier object</span>
+</span></span><span class="line"><span class="cl"><span class="n">svc</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># define the parameter grid to search over</span>
+</span></span><span class="line"><span class="cl"><span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;kernel&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="s1">&#39;rbf&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;gamma&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># create a GridSearchCV object with the SVM classifier and parameter grid</span>
+</span></span><span class="line"><span class="cl"><span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">svc</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1_macro&#39;</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># fit the GridSearchCV object on the training data</span>
+</span></span><span class="line"><span class="cl"><span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># get the best parameters and best score</span>
+</span></span><span class="line"><span class="cl"><span class="n">best_params</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span>
+</span></span><span class="line"><span class="cl"><span class="n">best_score</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_score_</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># create an SVM classifier with the best parameters</span>
+</span></span><span class="line"><span class="cl"><span class="n">svc</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="o">**</span><span class="n">best_params</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># fit the model on the training data using the best parameters</span>
+</span></span><span class="line"><span class="cl"><span class="n">svc</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## LINEAR DISCRIMINANT ANALYSIS</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="kn">import</span> <span class="n">LinearDiscriminantAnalysis</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># create instance with linear discriminant analysis function</span>
+</span></span><span class="line"><span class="cl"><span class="n">lda</span> <span class="o">=</span> <span class="n">LinearDiscriminantAnalysis</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># fit model</span>
+</span></span><span class="line"><span class="cl"><span class="n">lda</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># running a cross validation after having tuned each model</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">f1_score</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># define the classifiers</span>
+</span></span><span class="line"><span class="cl"><span class="n">classifiers</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="s1">&#39;distance&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DecisionTreeClassifier</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">SVC</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;rbf&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">GaussianNB</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">LinearDiscriminantAnalysis</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># iterate over classifiers and get scores</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">clf</span> <span class="ow">in</span> <span class="n">classifiers</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;accuracy&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">f1_scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1_macro&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Accuracy: </span><span class="si">%0.2f</span><span class="s2"> (+/- </span><span class="si">%0.2f</span><span class="s2">) Macro F1 score: </span><span class="si">%0.2f</span><span class="s2"> (+/- </span><span class="si">%0.2f</span><span class="s2">) [</span><span class="si">%s</span><span class="s2">]&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                                                                            <span class="p">,</span> <span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                                                                            <span class="p">,</span> <span class="n">f1_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                                                                            <span class="p">,</span> <span class="n">f1_scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                                                                            <span class="p">,</span> <span class="n">clf</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">))</span>
+</span></span></code></pre></div><pre><code>Accuracy: 0.65 (+/- 0.03) Macro F1 score: 0.53 (+/- 0.04) [KNeighborsClassifier]
+Accuracy: 0.57 (+/- 0.05) Macro F1 score: 0.54 (+/- 0.06) [DecisionTreeClassifier]
+Accuracy: 0.65 (+/- 0.04) Macro F1 score: 0.57 (+/- 0.05) [SVC]
+Accuracy: 0.60 (+/- 0.04) Macro F1 score: 0.57 (+/- 0.03) [GaussianNB]
+Accuracy: 0.64 (+/- 0.02) Macro F1 score: 0.49 (+/- 0.02) [LinearDiscriminantAnalysis]
+</code></pre>
+<p>The models result in varying levels of performance, bias and variance, flexibility, and interpretability.</p>
+<ul>
+<li>Based on the accuracy and the standard deviation, the models range from moderate to relatively consistent.</li>
+<li>In terms of flexibility and interpretability, K-Nearest Nieghbors and Decision Trees tend to be the most flexible and interpretable.</li>
+<li>Since predicting mental disorders is a nuanced topic, it is likely that models that do not assume linearity (KNN and Decision Trees) introduce less bias than those that do assume it (Support Vectors, Naive Bayes, Linear Discriminant Analysis).</li>
+</ul>
+<p>With all that said and done, <strong>K-Nearest Neighbors is the best performing model</strong>.</p>
+<ul>
+<li>It has the highest accuracy.</li>
+<li>It has one of the highest Macro F1 scores.</li>
+<li>It is highly interpretable.</li>
+<li>It is highly flexible.</li>
+<li>It has relatively low variance.</li>
+<li>It likely introduces less bias due to its ability to capture non-linear relationships.</li>
+</ul>
+<hr>
+<h2 id="in-conclusion">In Conclusion</h2>
+<p><strong>Even though the machine learning models are relatively consistent when it comes to predicting depression, ultimately, the assumptions underlying the variables are reductionist and fail to capture the complex topics that are music and mental health</strong>.</p>
+<p>While the KNN model reaches decent levels of predictive power, it&rsquo;s still a 60-70% performance for predicting two categories - at which point, you might be better off flipping a coin and assigning depression based on that.</p>
+<p>But even more than each model&rsquo;s performance, for me, the core question is: Can we really predict mental disorders?</p>
+<p>Mental health is already nuanced as is, so reducing it to a binary status - either you&rsquo;re depressed or not - based on arbitrary numbers is already a questionable choice. A better route would be to use a holistic dependent variable that encompasses self-reported measures along with professional assessments and even physiological metrics.</p>
+<p>Related to mental health being a multifaceted phenomena, these models rely on a limited amount of variables, therefore it is possible that depression is not being properly captured through the selected dependent variables (e.g., perhaps an ideal model needs to include Beats Per Minute or an individual&rsquo;s primary streaming service).</p>
+<p>Additionally, even though the data seems more or less normally distributed, there was little control over the sample which further threatens any generalizations that can come from this analysis. In this regard, the ideal alternative would be to make the sampling method as random as possible while accounting for sociocultural and demographic variables.</p>
+<p>And lastly, imagine if we created a more accurate model, would we still want to predict mental disorders based on music taste? This could entail severe ethical implications - from endangering freedom of speech to wanting to access private data in the name of mental health.</p>
+<p>Music is intertwined with sociocultural practices and it is hard to encompass all of the aspects involved in a short survey. As for mental health, self-reported measures are always debatable - add to that the fact that these models reduced depression to a binary scale, then you have a much more dubious outcome variable.</p>
+<p>Should a follow-up analysis be conducted, I would recommend fully fleshing out these concepts, having more/better data, and having more control (while randomizing) over the sampling method.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/python/">Python</a>
+  
+  <a class="badge badge-light" href="/tag/machine-learning/">Machine Learning</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmacuriels.com%2Fproject%2Fpredicting-depression-with-music%2F&amp;text=Predicting&#43;Depression&#43;Based&#43;on&#43;Musical&#43;Taste" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fmacuriels.com%2Fproject%2Fpredicting-depression-with-music%2F&amp;t=Predicting&#43;Depression&#43;Based&#43;on&#43;Musical&#43;Taste" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Predicting%20Depression%20Based%20on%20Musical%20Taste&amp;body=https%3A%2F%2Fmacuriels.com%2Fproject%2Fpredicting-depression-with-music%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fmacuriels.com%2Fproject%2Fpredicting-depression-with-music%2F&amp;title=Predicting&#43;Depression&#43;Based&#43;on&#43;Musical&#43;Taste" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Predicting&#43;Depression&#43;Based&#43;on&#43;Musical&#43;Taste%20https%3A%2F%2Fmacuriels.com%2Fproject%2Fpredicting-depression-with-music%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fmacuriels.com%2Fproject%2Fpredicting-depression-with-music%2F&amp;title=Predicting&#43;Depression&#43;Based&#43;on&#43;Musical&#43;Taste" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://macuriels.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_huf473800f1f40bdbc2ed13561d0d09d5c_11212659_270x270_fill_lanczos_center_3.png" alt="Miguel Curiel"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://macuriels.com/">Miguel Curiel</a></h5>
+      <h6 class="card-subtitle">Data | Insights | Growth</h6>
+      <p class="card-text">Bridging the gap between social science and data science. Passionate about people, insights, and stories.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/" >
+        <i class="fas fa-"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/macuriels" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/macuriels" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2023. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.1d4346c6f7d46c340dc0a9058dd85c13.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.c84202fca2a6efbbecbaf0e8358c1d51.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
