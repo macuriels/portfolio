@@ -10,8 +10,17 @@ summary: A country-level analysis of time spent on social media and mental disor
 tags:
 - R
 - Tableau
-url_code: https://github.com/macuriels/umass_dacss_datasciencefundamentals/blob/main/social_media_mental_health_code.R
-url_dataset: https://macuriels.com/files/socialmedia_mentalhealth_bycountry.csv
+
+links:
+  - name: Read Project
+    url: https://macuriels.com/project/social-media-mental-health/
+  - name: View Code
+    url: https://github.com/macuriels/umass_dacss_datasciencefundamentals/blob/main/social_media_mental_health_code.R
+  - name: Download Dataset
+    url: https://macuriels.com/files/socialmedia_mentalhealth_bycountry.csv
+    
+# url_code: https://github.com/macuriels/umass_dacss_datasciencefundamentals/blob/main/social_media_mental_health_code.R
+# url_dataset: https://macuriels.com/files/socialmedia_mentalhealth_bycountry.csv
 ---
 
 This is a repurposed analysis of a final project made for graduate-level Data Science class.

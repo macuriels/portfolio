@@ -7,10 +7,18 @@ tags:
   - Social Network Analysis
 date: "2022-12-10T00:00:00Z"
 
+authors:
+- admin
+
 links:
-  - name: Dashboard
+  - name: Read Project
+    url: https://macuriels.com/project/netflix-trend-analysis/
+  - name: View Code
+    url: https://github.com/macuriels/umass_dacss_digitalbehavioraldata/blob/main/FinalProject_Shiny_MiguelCuriel.R
+  - name: Explore Dashboard
     url: https://macuriels.shinyapps.io/finalproject_miguelcuriel/
-url_code: https://github.com/macuriels/umass_dacss_digitalbehavioraldata/blob/main/FinalProject_Shiny_MiguelCuriel.R
+    
+# url_code: https://github.com/macuriels/umass_dacss_digitalbehavioraldata/blob/main/FinalProject_Shiny_MiguelCuriel.R
 # Optional external URL for project (replaces project detail page).
 # external_link: https://macuriels.shinyapps.io/finalproject_miguelcuriel/
 

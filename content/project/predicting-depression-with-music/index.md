@@ -10,8 +10,17 @@ summary: Using Python to build machine learning models and predict depression ba
 tags:
 - Python
 - Machine Learning
-url_code: https://github.com/macuriels/umass_dacss_machinelearning/blob/main/predicting_depression_with_music_code.ipynb
-url_dataset: https://macuriels.com/files/mxmh_clean.csv
+
+links:
+  - name: Read Project
+    url: https://macuriels.com/project/predicting-depression-with-music/
+  - name: View Code
+    url: https://github.com/macuriels/umass_dacss_machinelearning/blob/main/predicting_depression_with_music_code.ipynb
+  - name: Download Dataset
+    url: https://macuriels.com/files/mxmh_clean.csv
+
+# url_code: https://github.com/macuriels/umass_dacss_machinelearning/blob/main/predicting_depression_with_music_code.ipynb
+# url_dataset: https://macuriels.com/files/mxmh_clean.csv
 ---
 
 # Predicting Depression Based on Musical Taste

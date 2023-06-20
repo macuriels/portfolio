@@ -7,12 +7,21 @@ tags:
 date: "2020-08-31T00:00:00Z"
 
 links:
-  - name: Course
+  - name: Read Project
+    url: https://macuriels.com/project/social-media-insights-healthcare/
+  - name: View Course
     url: https://campus.antropomedia.academy/courses/metodos-digitales-para-profesionales-de-la-salud
+    
+# links:
+#   - name: Course
+#     url: https://campus.antropomedia.academy/courses/metodos-digitales-para-profesionales-de-la-salud
 
 image:
   caption: Image generated using Canva's Text to Image AI generator
   focal_point: Smart
+
+authors:
+- admin
 ---
 
 This is a repurposed analysis of an online course I authored and published on [Antropomedia Academy](https://campus.antropomedia.academy/courses/metodos-digitales-para-profesionales-de-la-salud).
