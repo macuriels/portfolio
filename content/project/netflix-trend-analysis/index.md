@@ -3,7 +3,6 @@ title: Netflix Trend Analysis
 summary: Using R to build a Shiny [web application](https://macuriels.shinyapps.io/finalproject_miguelcuriel/) analyzing Netflix trends on Google and Twitter.
 tags:
   - R
-  - Shiny
   - Social Network Analysis
 date: "2022-12-10T00:00:00Z"
 

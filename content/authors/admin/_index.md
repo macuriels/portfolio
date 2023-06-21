@@ -55,7 +55,7 @@ title: Miguel Curiel
 > **I am a Social Scientist that uses Data Science tools to help people and businesses grow through data-driven solutions.**
 {style="font-size: 1.5rem;"}
 
-I have spent the last 5 years translating complex data into clear and concise insights to empower individuals, enhance marketing strategies, and optimize business procedures.
+I have spent the last 5 years in research and technology, specializing in translating complex data into clear insights that empower individuals, enhance marketing strategies, and optimize business procedures.
 
 Continue scrolling to view some of my data projects and feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/macuriels/).
 
