@@ -8,7 +8,7 @@ date: "2020-08-31T00:00:00Z"
 
 links:
   - name: Read Project
-    url: https://macuriels.com/project/social-media-insights-healthcare/
+    url: '/project/social-media-insights-healthcare/'
   - name: View Course
     url: https://campus.antropomedia.academy/courses/metodos-digitales-para-profesionales-de-la-salud
     

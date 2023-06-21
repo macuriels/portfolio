@@ -13,7 +13,7 @@ tags:
 
 links:
   - name: Read Project
-    url: https://macuriels.com/project/social-media-mental-health/
+    url: '/project/social-media-mental-health/'
   - name: View Code
     url: https://github.com/macuriels/umass_dacss_datasciencefundamentals/blob/main/social_media_mental_health_code.R
   - name: Download Dataset

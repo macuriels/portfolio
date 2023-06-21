@@ -13,7 +13,7 @@ tags:
 
 links:
   - name: Read Project
-    url: https://macuriels.com/project/predicting-depression-with-music/
+    url: '/project/predicting-depression-with-music/'
   - name: View Code
     url: https://github.com/macuriels/umass_dacss_machinelearning/blob/main/predicting_depression_with_music_code.ipynb
   - name: Download Dataset

@@ -12,7 +12,7 @@ authors:
 
 links:
   - name: Read Project
-    url: https://macuriels.com/project/netflix-trend-analysis/
+    url: '/project/netflix-trend-analysis/'
   - name: View Code
     url: https://github.com/macuriels/umass_dacss_digitalbehavioraldata/blob/main/FinalProject_Shiny_MiguelCuriel.R
   - name: Explore Dashboard
