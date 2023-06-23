@@ -52,12 +52,14 @@ superuser: true
 title: Miguel Curiel
 ---
 
-> **I am a Social Scientist that uses Data Science tools to help people and businesses grow through data-driven solutions.**
-{style="font-size: 1.5rem;"}
+> **I turn complex data into actionable insights that drive growth for individuals and businesses.**
+{style="font-size: 2.0rem;"}
 
-I have spent the last 5 years in research and technology, specializing in translating complex data into clear insights that empower individuals, enhance marketing strategies, and optimize business procedures.
+I'm a Social and Data Scientist who has spent the past 5 years leading analytics projects to help Fortune 500 companies and multinational corporations make informed decisions.
 
-Continue scrolling to view some of my data projects and feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/macuriels/).
+I leverage programming languages, statistical methods, and social science concepts to make sense of the world, and I specialize in uncovering and communicating insights.
+
+Continue scrolling to view some of my blog posts and projects, and feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/macuriels/).
 
 ---
 
