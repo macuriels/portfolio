@@ -57,13 +57,13 @@ title: Miguel Curiel
 
 I'm a Social and Data Scientist who has spent the past 5 years leading analytics projects to help Fortune 500 companies and multinational corporations make informed decisions.
 
-I leverage programming languages, statistical methods, and social science concepts to make sense of the world, and I specialize in uncovering and communicating insights.
-
-Continue scrolling to view some of my blog posts and projects, and feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/macuriels/).
+I use programming languages, statistical methods, and social science concepts to make sense of the world, and I specialize in finding patterns to enhance business strategies.
 
 ---
 
 ## What is  ***macuriels***  for?
 I built this website to display my past projects and share the valuable lessons I've learned along my journey. The website's name is a playful nod to my full name.
+
+Continue scrolling to view some of my blog posts and projects, and feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/macuriels/).
 
 {style="text-align: justify;"}

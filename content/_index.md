@@ -8,7 +8,7 @@ sections:
     title: macuriels
     text: |-
       ---
-      Inspiring Insights through Science.
+      Driving change through data insights.
       {style="font-size: 5.0rem;"}
   design:
     background:
