@@ -57,7 +57,7 @@ title: Miguel Curiel
 
 I'm a Social and Data Scientist who has spent the past 5 years leading analytics projects to help Fortune 500 companies and multinational corporations make informed decisions.
 
-I leverage programming languages, statistical methods, and social science principles to make sense of the world, and I specialize in uncovering patterns within intricate data and building partnerships to enhance organizational strategies.
+I use programming languages, statistical methods, and social science principles to make sense of the world, and I specialize in uncovering patterns within intricate data and building partnerships to enhance business strategies.
 
 ---
 
