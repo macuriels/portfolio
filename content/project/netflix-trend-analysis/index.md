@@ -1,6 +1,6 @@
 ---
 title: Netflix Trend Analysis
-summary: Using R to build a Shiny [web application](https://macuriels.shinyapps.io/finalproject_miguelcuriel/) analyzing Netflix trends on Google and Twitter.
+summary: An [interactive dashboard](https://macuriels.shinyapps.io/finalproject_miguelcuriel/) built using R to analyze Netflix trends on Google and Twitter.
 tags:
   - R
   - Social Network Analysis
