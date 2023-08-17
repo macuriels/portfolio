@@ -26,11 +26,11 @@ image:
 
 **PROJECT SUMMARY**
 
-- Sanctions are increasingly common forms of pressure employed by governments. A network of country-level sanctions is visualized using data from 1950 to 2022.
+- This post analyzes how countries have sanctioned each other to shed light on the international network of political alliances and influence.
 
-- The dataset is wrangled and results in 153 countries and 726 sanctioning relationships. This data is used to create a network of sanctioning/sanctioned countries.
+- An open-source dataset (the [Global Sanctions Data Base](http://www.globalsanctionsdatabase.com/)) is wrangled and results in 153 countries and 726 sanctioning relationships spanning from 1950 to 2022.
 
-- There are three main dynamics present in the network of international sanctions: the sanctioning powerhouses, the regional communities, and the wildcards. 
+- This data is used to create a network of sanctioning and sanctioned countries, in which there are three main dynamics: the sanctioning powerhouses, the regional communities, and the wildcards. 
 
 - The powerhouses are those who have issued the most sanctions and are in the center of the network; the regional communities are close together in the network and in geography; and the wildcards are close to the powerhouses and have the potential of acting as mediators, allies, or instigators.
 
@@ -40,13 +40,13 @@ image:
 
 ---
 
-Sanctions are forms of pressure that governments impose on other countries or organizations in response to actions that are deemed unacceptable, such as human rights violations or terrorism. 
+Sanctions are forms of pressure that governments impose on other countries or organizations, typically, in response to actions that are deemed unacceptable, such as human rights violations or terrorism. 
 
 Even though sanctions have been brought into the limelight in the last decade, they are not a new practice. In fact, the first sanction arguably dates back to a BC era, when the then-independent state of Megara was banned from trading in Greece’s marketplace.
 
-Fast forward to present day. The current geopolitical landscape - which includes ongoing wars, forced labor, near-shoring, to name a few - is bound to be intertwined with countries imposing sanctions on one another. 
+Fast forward to present day. The current geopolitical landscape - which includes ongoing wars, forced labor, threatened supply chains, to name a few - is bound to be intertwined with countries imposing sanctions on one another. 
 
-This article is brings a novel approach to understand the geopolitical landscape by **analyzing the network of international sanctions** based on current and historical data to assist policy-makers, researchers, and curious bystanders. 
+This article brings a novel approach to understand the influence and alliances between countries by **analyzing the network of international sanctions** based on current and historical data to assist policy-makers, researchers, and curious bystanders. 
 
 The article is divided as follows:
 1. Methodology
@@ -66,7 +66,7 @@ The original database contains 1,325 cases of countries and international organi
 
 ## Data Collection
 
-The researchers collect data by cross-referencing across diverse official sources, from government orders to international newspapers and history books. 
+The researchers behind the GSDB collect data by cross-referencing across diverse official sources, from government orders to international newspapers and history books. 
 
 Besides the sanctioning and the sanctioned government, the dataset contains other variables such as the start and end dates of the sanction, the objective of the sanction, and its outcome. 
 
@@ -74,7 +74,7 @@ Even though the most common are trade sanctions, the database also differentiate
 
 ## Data Wrangling
 
-This analysis omits and summarizes several variables from the original dataset. The data wrangling results in a table with nodes and edges (countries and sanctioning relationships, respectively).
+The analysis in this article omits and summarizes several variables from the GSDB. Multiple data wrangling operations are performed to yield a table with nodes and edges (countries and sanctioning relationships, respectively).
 
 {{< spoiler text="*Click to view the data wrangling operations*" >}}
 
@@ -97,13 +97,17 @@ This analysis omits and summarizes several variables from the original dataset. 
 A full script with the data wrangling code can be viewed on the following Jupyter Notebook:
 https://github.com/macuriels/umass_dacss_datastorytelling/blob/main/international_sanctions_network.ipynb
 
-The tidied data is used to create a network visualization and view the web of sanctions among countries. The network is created and hosted through Fluorish’s interactive software. Some additional plots and tables are created using Python to explore the dataset.
+The tidied data is used to create a network visualization and view the web of sanctions among countries. 
+
+The network is created and hosted through Fluorish’s interactive software. Some additional plots and tables are created using Python to explore the dataset.
 
 ---
 
 # Exploratory Analysis
 
-The tidied dataset contains 153 distinct countries that have either sanctioned or been sanctioned and 726 distinct pairs of sanctioning relationships. Below is the breakdown by continent.
+The tidied dataset contains 153 distinct countries that have either sanctioned or been sanctioned and 726 distinct pairs of sanctioning relationships. 
+
+Below is the breakdown by continent.
 
 | **CONTINENT** | **COVERAGE**                            |
 |---------------|-----------------------------------------|
@@ -120,23 +124,23 @@ Another approach to explore the data is through an overview of sanctions over ti
 
 {{< chart data="country-sanctions-sum" >}}
 
-From the line chart, we can see that these remained relatively low from 1950 to 1980. 
+From the line chart, we can see that sanctions remained relatively low from 1950 to 1980. 
 
-There’s a slight increase in the 80s, corresponding to Iran’s Hostage Crisis, the Soviet Invasion of Afghanistan, and Cold War Dynamics in general. 
+There’s a slight increase in the 80s, corresponding to Iran’s Hostage Crisis, the Soviet Invasion of Afghanistan, and Cold War dynamics in general. 
 
-Sanctions really pick up the pace from the turn of the millennia - which mostly corresponds to the sanctions following 9/11.
+Sanctions really pick up the pace at the turn of the millennia - which mostly corresponds to the sanctions following 9/11.
 
 Another notable spike in sanctions activity occurred in 2011, which involved a mixture of relevant international events, namely the Arab Spring Uprisings, the beginning of the Syrian Civil War, and the dictatorship in Libya. 
 
-From there, the most prominent spike happens in 2022 and is a direct response of Western countries against Russia amidst its invasion of Ukraine.
+From there, the most prominent spike happens in 2021-2022. Besides the response of Western countries against Russia amidst its invasion of Ukraine, this timeframe also includes human rights violations against Uyghurs in China and a military coup in Myanmar.
 
 ---
 
 # Network Analysis
 
-After generating a list of nodes and edges, the network is generated using a simple repulsion-attraction algorithm, i.e., related nodes will be closer together, and more connected nodes will be in the center. 
+After generating a list of nodes and edges, the network is generated using a simple repulsion-attraction algorithm, i.e., countries with more relationships will be brought together while less connected countries will be pushed away.
 
-The network is also stylized by increasing the node size according to its degree; the edge width corresponds to the times a sanctioning relationship has occurred; and the colors behind the flags represent the continents.
+The network also includes arrows showing who sanctioned whom; is stylized by increasing the node size according to its degree; the edge width corresponds to the times a sanctioning relationship has occurred; and the colors behind the flags represent the continents.
 
 {{% callout note %}}
 
@@ -156,7 +160,7 @@ In this context, influential nodes are **sanctioning powerhouses** that lead by 
 
 ## Communities
 
-Countries further from the center tend to form clusters of sanctioning/sanctioned countries, and these clusters correlate to geographic regions. 
+Countries further from the center tend to form clusters of countries that have sanctioned each other, and these clusters correlate to geographic regions. 
 
 These clusters can be considered sanctioning communities that are determined by **regional dynamics**. 
 
@@ -166,7 +170,7 @@ Another noteworthy community is the one formed around Qatar - this country has a
 
 ## Wildcards
 
-Lastly, some nodes are not influential nor are clustered according to geographical region but are central to the network. 
+Lastly, there are some nodes are not influential nor are clustered according to geographical region but are central in the network. 
 
 Under network science, these are close to the gravitational centers, so they can be considered influential by extension.
 
@@ -190,9 +194,9 @@ Lastly, the nodes that are central in the network but have a low degree of conne
 
 However interesting these findings may be, there are some significant limitations to keep in mind. 
 
-For starters, not all variables from the original dataset were used; therefore, this model likely employs a simplistic approach to a multi-faceted problem. 
+For starters, variables such as the type of sanction or its outcome were omitted; therefore, this model likely employs a simplistic approach to a multi-faceted problem. 
 
-Additionally, it can be worth thinking about a better way of treating dissolved countries and international organizations, as these have played a role in developing the current sanctions landscape but are omitted from this model. 
+Additionally, it can be worth thinking about a better way of treating dissolved countries and international organizations. These are excluded from the model, but have arguably played an important role in consolidating the current sanctions landscape. 
 
-Lastly, the network model underlying the visualization is a simple repulsion/attraction calculation - it may be worth exploring alternative algorithms and analyzing how the distribution changes.
+Lastly, the algorithm underlying the network visualization is a simple repulsion/attraction calculation - it may be worth exploring alternative layouts and analyzing how the distribution changes.
 
