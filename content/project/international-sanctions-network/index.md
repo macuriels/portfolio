@@ -138,7 +138,7 @@ From there, the most prominent spike happens in 2021-2022. Besides the response 
 
 # Network Analysis
 
-After generating a list of nodes and edges, the network is generated using a simple repulsion-attraction algorithm, i.e., countries with more relationships will be brought together while less connected countries will be pushed away.
+After generating a list of nodes and edges, the network is generated using a simple repulsion-attraction algorithm, i.e., countries with more sanctioning activity will be closer to the center and countries with similar sanctioning patterns will be brought together.
 
 The network also includes arrows showing who sanctioned whom; is stylized by increasing the node size according to its degree; the edge width corresponds to the times a sanctioning relationship has occurred; and the colors behind the flags represent the continents.
 

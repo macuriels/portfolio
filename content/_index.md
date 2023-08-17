@@ -5,7 +5,7 @@ date: "2023-05-22"
 sections:
 - block: hero
   content:
-    title: macuriels
+    title: Miguel Curiel
     text: |-
       ---
       Driving change through data insights.
