@@ -26,7 +26,7 @@ image:
 
 **PROJECT SUMMARY**
 
-- This post analyzes how countries have sanctioned each other to shed light on the international network of political alliances and influence.
+- This post analyzes how countries have sanctioned each other to shed light on the international network of political conflict, alliances and influence.
 
 - An open-source dataset (the [Global Sanctions Data Base](http://www.globalsanctionsdatabase.com/)) is wrangled and results in 153 countries and 726 sanctioning relationships spanning from 1950 to 2022.
 
@@ -46,7 +46,7 @@ Even though sanctions have been brought into the limelight in the last decade, t
 
 Fast forward to present day. The current geopolitical landscape - which includes ongoing wars, forced labor, threatened supply chains, to name a few - is bound to be intertwined with countries imposing sanctions on one another. 
 
-This article brings a novel approach to understand the influence and alliances between countries by **analyzing the network of international sanctions** based on current and historical data to assist policy-makers, researchers, and curious bystanders. 
+This article brings a novel approach to understand the conflict, alliances, and conflict between countries by **analyzing the network of international sanctions** based on current and historical data to assist policy-makers, researchers, and curious bystanders. 
 
 The article is divided as follows:
 1. Methodology
@@ -71,6 +71,8 @@ The researchers behind the GSDB collect data by cross-referencing across diverse
 Besides the sanctioning and the sanctioned government, the dataset contains other variables such as the start and end dates of the sanction, the objective of the sanction, and its outcome. 
 
 Even though the most common are trade sanctions, the database also differentiates between other types, such as military and travel bans.
+
+The GSDB can be accessed by reaching out to the original authors - contact details con be found on the [GSDB's official website](http://www.globalsanctionsdatabase.com/).
 
 ## Data Wrangling
 
@@ -97,9 +99,13 @@ The analysis in this article omits and summarizes several variables from the GSD
 A full script with the data wrangling code can be viewed on the following Jupyter Notebook:
 https://github.com/macuriels/umass_dacss_datastorytelling/blob/main/international_sanctions_network.ipynb
 
-The tidied data is used to create a network visualization and view the web of sanctions among countries. 
+The tidied data results in a list of countries issuing sanctions and the countries that receive them, along with metrics such as the time that a sanctioning relationship occurs and country identifiers such as its continent.
 
-The network is created and hosted through Fluorish’s interactive software. Some additional plots and tables are created using Python to explore the dataset.
+It is important to note that the cleansed data removes dissolved countries and international organizations, and does not differentiate between the type of sanction, its outcome, or the timeframe.
+
+Finally, the tidied data is used to create a network visualization and view the web of sanctions among countries. The network is created and hosted through Fluorish’s interactive software. Some additional plots and tables are created using Python to explore the dataset.
+
+The dataset that comes out of the wrangling operations and is used in this analysis can be accessed through the "Download Dataset" button at the top of this post, or by clicking [here](https://macuriels.com/files/international_sanctions_network.xlsx).
 
 ---
 
@@ -140,6 +146,8 @@ From there, the most prominent spike happens in 2021-2022. Besides the response 
 
 After generating a list of nodes and edges, the network is generated using a simple repulsion-attraction algorithm, i.e., countries with more sanctioning activity will be closer to the center and countries with similar sanctioning patterns will be brought together.
 
+The **nodes** (dots in the network) are countries that have not been dissolved and have been involved in sanctioning activity. They will have **edges** (lines connecting the nodes) whenever one country has sanctioned another, and is worth noting that a sanctioning relationship can occur more than once.
+
 The network also includes arrows showing who sanctioned whom; is stylized by increasing the node size according to its degree; the edge width corresponds to the times a sanctioning relationship has occurred; and the colors behind the flags represent the continents.
 
 {{% callout note %}}
@@ -149,6 +157,24 @@ The network is interactive. Users can hover over nodes to see additional informa
 {{% /callout %}}
 
 <div class="flourish-embed flourish-network" data-src="visualisation/14725057"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+{{< spoiler text="*Click to view the network's legend and annotations*" >}}
+
+- Nodes = the points in the network are countries that still exist (have not been dissolved) and have been involved in sanctions
+
+- Edges = the lines that join the nodes are sanctioning relationships (countries will be tied together whenever one has sanctioned the other)
+
+- Arrows in the edges = indicates who sanctioned whom
+
+- Node fill = country's flag
+
+- Node background color = continent
+
+- Node size = determined by the node's degree, i.e., how many times has a country has either received or issued sanctions
+
+- Edge width = how many times a sanctioning relationship has occurred (the more one country has sanctioned another country, the greater the width)
+
+{{< /spoiler >}}
 
 ## Powerhouses
 
@@ -160,7 +186,7 @@ In this context, influential nodes are **sanctioning powerhouses** that lead by 
 
 ## Communities
 
-Countries further from the center tend to form clusters of countries that have sanctioned each other, and these clusters correlate to geographic regions. 
+Countries tend to form clusters based on similar sanctioning patterns, and these clusters correlate to geographic regions. 
 
 These clusters can be considered sanctioning communities that are determined by **regional dynamics**. 
 
