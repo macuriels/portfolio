@@ -25,7 +25,7 @@ links:
 
 # Predicting Depression Based on Musical Taste
 
-This is a repurposed analysis of a final project made for graduate-level Data Science class.
+This is a repurposed analysis of a final project made for a graduate-level Data Science class.
 
 {{% callout note %}}
 **PROJECT SUMMARY**

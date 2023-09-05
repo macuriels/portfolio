@@ -32,7 +32,7 @@ Click [**here**](https://macuriels.shinyapps.io/finalproject_miguelcuriel/) to v
 
 **PROJECT SUMMARY**
 
-- This is a repurposed analysis of a final project made for graduate-level Data Science class which analyzes Netflix trends using the `gtrendsR` and `rtweet` packages in R to download data from Google Trends and Twitter, respectively. 
+- This is a repurposed analysis of a final project made for a graduate-level Data Science class which analyzes Netflix trends using the `gtrendsR` and `rtweet` packages in R to download data from Google Trends and Twitter, respectively. 
 
 - Google Trends data for Netflix (and other streaming services) is downloaded from October-December 2022; Twitter data is downloaded from December 4-7 for tweets containing #netflix.
 

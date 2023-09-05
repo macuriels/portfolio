@@ -23,7 +23,7 @@ links:
 # url_dataset: https://macuriels.com/files/socialmedia_mentalhealth_bycountry.csv
 ---
 
-This is a repurposed analysis of a final project made for graduate-level Data Science class.
+This is a repurposed analysis of a final project made for a graduate-level Data Science class.
 
 {{% callout note %}}
 

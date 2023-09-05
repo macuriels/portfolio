@@ -22,6 +22,8 @@ image:
   focal_point: Smart
 ---
 
+This is a repurposed analysis of a final project made for a graduate-level Data Science class.
+
 {{% callout note %}}
 
 **PROJECT SUMMARY**
