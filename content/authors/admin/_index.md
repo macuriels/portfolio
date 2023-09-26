@@ -36,6 +36,10 @@ social:
   icon_pack: fab
   label: Check out some of my code
   link: https://github.com/macuriels
+- icon: medium
+  icon_pack: fab
+  label: Visit my blog posts
+  link: https://medium.com/@macuriels
 #   icon: twitter
 #   icon_pack: fab
 #   label: Follow me on Twitter

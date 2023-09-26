@@ -28,6 +28,7 @@ links:
 This is a repurposed analysis of a final project made for a graduate-level Data Science class.
 
 {{% callout note %}}
+
 **PROJECT SUMMARY**
 
 - This project develops machine learning models to attempt to predict depression based on a free survey dataset with over 700 responses ([Music x Mental Health Traits](https://www.kaggle.com/datasets/catherinerasgaitis/mxmh-survey-results)).
@@ -39,6 +40,7 @@ This is a repurposed analysis of a final project made for a graduate-level Data 
 - Even though all models perform decently, mental health is a complex topic, the assumptions underlying the models are simplistic, and implementing them would require evaluating the ethical implications.
 
 {{% /callout %}}
+
 ---
 
 Having a background in psychology and having played guitar for over 15 years, music and mental health are two topics near and dear to me. It's well known that mental disorders affect millions worldwide, and their impact on individuals and society is significant. 
