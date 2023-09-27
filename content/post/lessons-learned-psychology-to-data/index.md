@@ -14,8 +14,8 @@ image:
   preview_only: false
 lastmod: "2023-09-26T00:00:00Z"
 projects: []
-subtitle: "Five C skills transferable skills between fields: Context, Communication, Cooperation, Creativity, and Compassion."
-summary: "Five C skills transferable skills between fields: Context, Communication, Cooperation, Creativity, and Compassion."
+subtitle: "Five transferable 'C skills' between fields: Context, Communication, Cooperation, Creativity, and Compassion."
+summary: "Five transferable 'C skills' between fields: Context, Communication, Cooperation, Creativity, and Compassion."
 # tags:
 # - Academic
 # - 开源
