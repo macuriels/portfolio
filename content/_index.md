@@ -8,7 +8,7 @@ sections:
     title: Miguel Curiel
     text: |-
       ---
-      Driving change through data insights.
+      Driving change through data insights
       {style="font-size: 5.0rem;"}
   design:
     background:
