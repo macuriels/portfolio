@@ -3,7 +3,7 @@ title: International Sanctions Network
 summary: Visualizing the web of sanctions that countries have imposed on each other using Python and network analysis.
 tags:
   - Python
-  - Social Network Analysis
+  - Network Analysis
 date: 2023-08-15
 
 authors:

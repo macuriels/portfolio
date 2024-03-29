@@ -3,7 +3,7 @@ title: Netflix Trend Analysis
 summary: An [interactive dashboard](https://macuriels.shinyapps.io/finalproject_miguelcuriel/) built using R to analyze Netflix trends on Google and Twitter.
 tags:
   - R
-  - Social Network Analysis
+  - Network Analysis
 date: "2022-12-10T00:00:00Z"
 
 authors:

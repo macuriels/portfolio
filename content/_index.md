@@ -37,8 +37,10 @@ sections:
       # tag: User Insights
     - name: Machine Learning
       tag: Machine Learning
-    - name: Social Network Analysis
-      tag: Social Network Analysis
+    - name: Network Analysis
+      tag: Network Analysis
+    - name: Text Analysis
+      tag: Text Analysis
     default_button_index: 0
     filters:
       folders:

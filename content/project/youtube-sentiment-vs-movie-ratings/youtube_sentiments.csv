@@ -1,0 +1,11 @@
+,imdb_id,movie_name,sentiment_vader
+0,tt0316654,Spider Man 2 2004,0.7730975
+1,tt10872600,Spider Man No Way Home,0.7044378378378379
+2,tt1386697,Suicide Squad,0.63852
+3,tt1502712,Fantastic Four 2015,0.5890080000000001
+4,tt2015381,Guardians of the Galaxy,0.78428
+5,tt2975590,Batman v Superman,0.608745
+6,tt3315342,Logan,0.646065
+7,tt3501632,Thor Ragnarok,0.6582083333333334
+8,tt5108870,Morbius,0.6612878787878789
+9,tt6565702,Dark Phoenix,0.5661285714285714
