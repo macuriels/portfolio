@@ -59,7 +59,7 @@ title: Miguel Curiel
 > **I turn complex data into actionable insights that drive growth for individuals and businesses.**
 {style="font-size: 2.0rem;"}
 
-I'm a Social and Data Scientist who has spent the past 5 years leading analytics projects to help Fortune 500 companies and multinational corporations make informed decisions.
+I'm a Social and Data Scientist who has spent the past 6 years leading analytics projects to help Fortune 500 companies and multinational corporations make informed decisions.
 
 I use programming languages, statistical methods, and social science principles to make sense of the world, and I specialize in finding patterns within intricate data and building partnerships to boost business strategies.
 
