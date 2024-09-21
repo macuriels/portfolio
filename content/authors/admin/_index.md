@@ -68,6 +68,6 @@ I use programming languages, statistical methods, and social science principles 
 ## What is  ***macuriels***  for?
 I built this website to display my past projects and share the valuable lessons I've learned along my journey. The website's name is a playful nod to my full name.
 
-Continue scrolling to view some of my blog posts and projects, and feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/macuriels/).
+Continue scrolling to view some of my projects, and feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/macuriels/).
 
 {style="text-align: justify;"}
