@@ -56,12 +56,12 @@ superuser: true
 title: Miguel Curiel
 ---
 
-> **I transform complex data into insights that empower growth through cross-functional collaboration.**
-{style="font-size: 2.0rem;"}
+> **I increase operational efficiencies and advise companies on how to gain a competitive edge through data and strategic leadership.**
+{style="font-size: 1.5rem;"}
 
 I'm a Social and Data Scientist who has spent the past 6 years leading analytics projects to help Fortune 500 companies and multinational corporations make informed decisions.
 
-I use programming languages, statistical methods, and social science principles to make sense of the world, and I specialize in finding patterns within intricate data and building partnerships to boost business strategies.
+I use programming languages, statistical methods, and behavioral insights to make sense of the world, and I specialize in telling compelling stories of intricate data and building partnerships to fuel growth.
 
 ---
 
