@@ -56,7 +56,7 @@ superuser: true
 title: Miguel Curiel
 ---
 
-> **I increase operational efficiencies and advise companies on how to gain a competitive edge through data and strategic leadership.**
+> **I increase operational efficiencies and advise companies on how to gain a competitive edge through data insights and strategic leadership.**
 {style="font-size: 1.5rem;"}
 
 I'm a Social and Data Scientist who has spent the past 6 years leading analytics projects to help Fortune 500 companies and multinational corporations make informed decisions.
