@@ -59,7 +59,7 @@ title: Miguel Curiel
 > **I increase operational efficiencies and help companies gain a competitive edge through data insights and strategic leadership.**
 {style="font-size: 1.25rem;"}
 
-I'm a Social and Data Scientist who has spent the past 6 years leading analytics projects to help Fortune 500 companies and multinational corporations make informed decisions.
+I'm a Social and Data Scientist who has spent the past 7 years leading analytics projects to help Fortune 500 companies and multinational corporations make informed decisions.
 
 I use programming languages, statistical methods, and behavioral insights to make sense of the world, and I specialize in telling compelling stories of intricate data and building partnerships to fuel growth.
 
